@@ -1,0 +1,20 @@
+:root{
+  --font-montserrat: "Montserrat", -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  --blue:  #2F80ED;
+  --pink: #FF2E63;
+}
+
+body {
+  background: linear-gradient(154.37deg, var(--pink)  0%, var(--blue) 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
