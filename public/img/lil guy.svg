@@ -1,0 +1,77 @@
+<svg width="837" height="743" viewBox="0 0 837 743" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>lil guy</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-229 114)">
+<g id="lil guy">
+<g id="Rectangle 3.1">
+<use xlink:href="#path0_fill" transform="matrix(0.99863 -0.052336 0.052336 0.99863 228.225 406.428)" fill="#FFFFFF"/>
+</g>
+<g id="Rectangle 3">
+<use xlink:href="#path1_fill" transform="translate(309 10)" fill="#FFFFFF"/>
+</g>
+<g id="body">
+<use xlink:href="#path2_fill" transform="translate(510 -114)" fill="#FFFFFF"/>
+</g>
+<g id="blue ball thing" filter="url(#filter0_d)">
+<use xlink:href="#path3_fill" transform="translate(725 219)" fill="#337FEB"/>
+</g>
+<g id="pink ball thing" filter="url(#filter1_d)">
+<use xlink:href="#path3_fill" transform="translate(716 -401)" fill="#FF2E63"/>
+</g>
+<g id="eye">
+<use xlink:href="#path4_fill" transform="translate(564 97)" fill="#333333"/>
+</g>
+<g id="eye">
+<use xlink:href="#path5_fill" transform="translate(569 288)" fill="#333333"/>
+</g>
+<g id="mouth">
+<mask id="mask0_alpha" mask-type="alpha">
+<g id="Ellipse">
+<use xlink:href="#path6_fill" transform="translate(688 188)" fill="#333333"/>
+</g>
+</mask>
+<g id="Ellipse" mask="url(#mask0_alpha)">
+<use xlink:href="#path6_fill" transform="translate(688 188)" fill="#333333"/>
+</g>
+<g id="Ellipse 2" mask="url(#mask0_alpha)">
+<use xlink:href="#path7_fill" transform="translate(738 219)" fill="#FF2F64"/>
+</g>
+<g id="Rectangle 4" mask="url(#mask0_alpha)">
+<use xlink:href="#path8_fill" transform="translate(621 196)" fill="#FFFFFF"/>
+</g>
+<g id="Rectangle 4.1" mask="url(#mask0_alpha)">
+<use xlink:href="#path8_fill" transform="translate(621 252)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="721" y="215" width="731" height="730" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="0"/>
+<feGaussianBlur stdDeviation="2"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<filter id="filter1_d" filterUnits="userSpaceOnUse" x="707" y="-410" width="741" height="740" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="0" dy="0"/>
+<feGaussianBlur stdDeviation="4.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_fill" d="M 0 30C 0 13.4315 13.4315 0 30 0L 330 0C 346.569 0 360 13.4315 360 30C 360 46.5685 346.569 60 330 60L 30 60C 13.4315 60 0 46.5685 0 30Z"/>
+<path id="path1_fill" d="M 0 25.5C 0 11.4167 11.4167 0 25.5 0L 334.5 0C 348.583 0 360 11.4167 360 25.5C 360 39.5833 348.583 51 334.5 51L 25.5 51C 11.4167 51 0 39.5833 0 25.5Z"/>
+<path id="path2_fill" d="M 743 371.5C 743 576.674 576.674 743 371.5 743C 166.326 743 0 576.674 0 371.5C 0 166.326 166.326 0 371.5 0C 576.674 0 743 166.326 743 371.5Z"/>
+<path id="path3_fill" d="M 722 361C 722 560.375 560.375 722 361 722C 161.625 722 0 560.375 0 361C 0 161.625 161.625 0 361 0C 560.375 0 722 161.625 722 361Z"/>
+<path id="path4_fill" d="M 92 46C 92 71.4051 71.4051 92 46 92C 20.5949 92 0 71.4051 0 46C 0 20.5949 20.5949 0 46 0C 71.4051 0 92 20.5949 92 46Z"/>
+<path id="path5_fill" d="M 65 32.5C 65 50.4493 50.4493 65 32.5 65C 14.5507 65 0 50.4493 0 32.5C 0 14.5507 14.5507 0 32.5 0C 50.4493 0 65 14.5507 65 32.5Z"/>
+<path id="path6_fill" d="M 112 56C 112 86.9279 86.9279 112 56 112C 25.0721 112 0 86.9279 0 56C 0 25.0721 25.0721 0 56 0C 86.9279 0 112 25.0721 112 56Z"/>
+<path id="path7_fill" d="M 96 48C 96 74.5097 74.5097 96 48 96C 21.4903 96 0 74.5097 0 48C 0 21.4903 21.4903 0 48 0C 74.5097 0 96 21.4903 96 48Z"/>
+<path id="path8_fill" d="M 0 18C 0 8.05888 8.05888 0 18 0L 82 0C 91.9411 0 100 8.05888 100 18C 100 27.9411 91.9411 36 82 36L 18 36C 8.05888 36 0 27.9411 0 18Z"/>
+</defs>
+</svg>

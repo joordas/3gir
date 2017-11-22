@@ -1,7 +1,9 @@
 :root{
   --font-montserrat: "Montserrat", -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+  --font-serif: "Mongolian Baiti", "Playfair Display", -apple-system, serif ;
   --blue:  #2F80ED;
   --pink: #FF2E63;
+  --black: #4d4d4d;
 }
 
 body {
@@ -9,6 +11,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
+  padding: 20px;
 }
 
 ul, ol {
@@ -18,3 +21,6 @@ ul, ol {
 a {
   text-decoration: none;
 }
+
+/* uncomment line below for an easier UI debuggin session ;) */
+/* * { outline: 1px solid magenta !important } */
