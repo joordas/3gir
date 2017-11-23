@@ -1,20 +1,22 @@
-:root{
-  --font-montserrat: "Montserrat", -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
-  --font-serif: "Mongolian Baiti", "Playfair Display", -apple-system, serif ;
-  --blue:  #2F80ED;
-  --pink: #FF2E63;
+:root {
+  --font-montserrat: "Montserrat", -apple-system, BlinkMacSystemFont, Roboto,
+    Helvetica Neue, sans-serif;
+  --font-serif: "Mongolian Baiti", "Playfair Display", -apple-system, serif;
+  --blue: #2f80ed;
+  --pink: #ff2e63;
   --black: #4d4d4d;
 }
 
 body {
-  background: linear-gradient(154.37deg, var(--pink)  0%, var(--blue) 100%);
+  background: linear-gradient(154.37deg, var(--pink) 0%, var(--blue) 100%);
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
-  padding: 20px;
+  padding: 0 20px;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -23,4 +25,36 @@ a {
 }
 
 /* uncomment line below for an easier UI debuggin session ;) */
-/* * { outline: 1px solid magenta !important } */
+* {
+  /* outline: 1px solid magenta !important; */
+}
+
+/* what we do section: */
+
+.whatwedo {
+  display: flex;
+  max-width: 300px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.whatwedo > span {
+  font-family: var(--font-montserrat);
+  font-weight: 900;
+  font-size: 4.5rem;
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-basis: 300px;
+}
+
+.whatwedo > span:after {
+  display: block;
+  content: "";
+  margin-left: 8px;
+  border-radius: 10px;
+  height: 4px;
+  width: 100%;
+  background-color: var(--blue);
+}

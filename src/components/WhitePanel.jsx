@@ -5,7 +5,11 @@ const Panel = styled.div`
   border-radius: 2px;
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.12);
   background-color: white;
-  // max-height: 100vh;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  min-height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
 `;
 
 class WhitePanel extends Component {

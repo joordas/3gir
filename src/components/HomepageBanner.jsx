@@ -6,8 +6,12 @@ const Gradient = styled.div`
   box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   padding-left: 200px;
-  padding-bottom: 20vh;
+  // height: 100%;
   position: relative;
+  flex-grow: 1;
+  div {
+    // height: 100%;
+  }
 `;
 
 const Header = styled.h1`
@@ -40,6 +44,11 @@ const Contact = styled.a`
   font-family: var(--font-montserrat);
   border-radius: 999rem;
   box-shadow: 0px 0px 10px rgba(255, 46, 99, 0.5);
+  flex-grow: 0;
+  margin-bottom: 100px;
+  display: inline-block;
+  max-width: 140px;
+  text-align: center;
 `;
 
 const LilGuy = styled.img`

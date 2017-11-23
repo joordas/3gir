@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Logo = styled.div`
-  padding: 20px 20px 100px;
+  padding: 20px 20px 50px;
   max-width: 800px;
   position: relative;
   left: 200px; // best choice? think again later pls;

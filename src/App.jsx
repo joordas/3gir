@@ -6,6 +6,7 @@ import WhitePanel from "./components/WhitePanel";
 import MenuBar from "./components/MenuBar";
 import LogoHeader from "./components/LogoHeader";
 import HomepageBanner from "./components/HomepageBanner";
+import Services from "./components/Services";
 
 class App extends Component {
   render() {
@@ -16,7 +17,9 @@ class App extends Component {
           <LogoHeader />
           <HomepageBanner />
         </WhitePanel>
-        <WhitePanel />
+        <WhitePanel>
+          <Services />
+        </WhitePanel>
       </div>
     );
   }
