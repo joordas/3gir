@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 import s from "styled-components";
+
 // components
 import WhitePanel from "./components/WhitePanel";
 import MenuBar from "./components/MenuBar";
@@ -12,6 +13,7 @@ const SideDecoration = s.img`
 position: absolute;
 bottom: 0;
 left: 0;
+padding-bottom: 30px;
 `;
 
 class App extends Component {

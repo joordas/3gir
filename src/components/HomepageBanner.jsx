@@ -37,6 +37,7 @@ const Subheader = styled.h2`
 `;
 
 const Contact = styled.a`
+  // this button needs to be bigger
   color: white;
   background-color: var(--pink);
   padding: 10px 25px;
