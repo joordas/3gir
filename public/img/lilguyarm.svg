@@ -1,0 +1,21 @@
+<svg width="171" height="143" viewBox="0 0 171 143" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>lilguyarm</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-720 -647)">
+<g id="lilguyarm" filter="url(#filter0_d)">
+<use xlink:href="#path0_fill" transform="matrix(-1 1.22465e-16 -1.22465e-16 -1 882 781)" fill="#337FEB" fill-opacity="0.5"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d" filterUnits="userSpaceOnUse" x="720" y="305" width="171" height="485" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 255 0"/>
+<feOffset dx="2" dy="2"/>
+<feGaussianBlur stdDeviation="3.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<path id="path0_fill" d="M 0 78.5C 0 35.1456 35.1456 0 78.5 0C 121.854 0 157 35.1456 157 78.5L 157 392.5C 157 435.854 121.854 471 78.5 471C 35.1456 471 0 435.854 0 392.5L 0 78.5Z"/>
+</defs>
+</svg>

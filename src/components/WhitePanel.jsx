@@ -10,6 +10,7 @@ const Panel = styled.div`
   min-height: calc(100vh - 40px);
   display: flex;
   flex-direction: column;
+  position: relative;
 `;
 
 class WhitePanel extends Component {

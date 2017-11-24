@@ -36,6 +36,10 @@ a {
   max-width: 300px;
   flex-wrap: wrap;
   padding: 20px;
+  padding-top: 180px;
+  max-height: 250px;
+  justify-content: flex-start;
+  padding-left: 200px;
 }
 
 .whatwedo > span {

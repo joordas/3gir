@@ -1,0 +1,22 @@
+<svg width="430" height="368" viewBox="0 0 430 368" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>sidethings</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(332 -1066)">
+<g id="sidethings">
+<g id="Rectangle 3.2">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 98 1362)" fill="#8160B7" fill-opacity="0.5"/>
+</g>
+<g id="Rectangle 3">
+<use xlink:href="#path1_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 14 1066)" fill="#3080ED" fill-opacity="0.5"/>
+</g>
+<g id="Rectangle 3.1">
+<use xlink:href="#path2_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 -138 1230)" fill="#FF2F64" fill-opacity="0.5"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 36C 0 16.1178 16.1178 0 36 0C 55.8823 0 72 16.1178 72 36L 72 435C 72 454.882 55.8823 471 36 471C 16.1178 471 0 454.882 0 435L 0 36Z"/>
+<path id="path1_fill" d="M 0 121.5C 0 54.3974 54.3974 0 121.5 0C 188.603 0 243 54.3974 243 121.5L 243 349.5C 243 416.603 188.603 471 121.5 471C 54.3974 471 0 416.603 0 349.5L 0 121.5Z"/>
+<path id="path2_fill" d="M 0 79C 0 35.3695 35.3695 0 79 0C 122.63 0 158 35.3695 158 79L 158 392C 158 435.63 122.63 471 79 471C 35.3695 471 0 435.63 0 392L 0 79Z"/>
+</defs>
+</svg>

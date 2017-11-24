@@ -1,12 +1,18 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-
+import s from "styled-components";
 // components
 import WhitePanel from "./components/WhitePanel";
 import MenuBar from "./components/MenuBar";
 import LogoHeader from "./components/LogoHeader";
 import HomepageBanner from "./components/HomepageBanner";
 import Services from "./components/Services";
+
+const SideDecoration = s.img`
+position: absolute;
+bottom: 0;
+left: 0;
+`;
 
 class App extends Component {
   render() {
@@ -19,6 +25,7 @@ class App extends Component {
         </WhitePanel>
         <WhitePanel>
           <Services />
+          <SideDecoration src="/public/img/sidethings.svg" />
         </WhitePanel>
       </div>
     );

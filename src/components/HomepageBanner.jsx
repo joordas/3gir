@@ -65,7 +65,7 @@ const HomepageBanner = () => (
       <Subheader>And then more.</Subheader>
       <Contact href="#">let's talk!</Contact>
     </div>
-    <LilGuy src="/public/img/lil guy.svg" />
+    <LilGuy id="lilguy" src="/public/img/lil guy.svg" />
   </Gradient>
 );
 
