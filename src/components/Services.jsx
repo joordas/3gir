@@ -4,7 +4,7 @@ import s from "styled-components";
 const Container = s.div`
   // margin-left: 200px;
   position: relative;
-  display: flex;  
+  display: flex;
 `;
 
 const What = s.span`
@@ -27,7 +27,6 @@ const ServicesPanel = s.div`
   background-color: #f2f2f2;
   box-shadow: 2px 2px 6px 0 rgba( 0, 0, 0, 0.13), 0 0 25px 5px rgba(0, 0, 0, 0.1);
   flex-grow: 1;
-  height: 400px; // shouldn't be fixed
   margin: 200px 200px 50px 100px;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
@@ -59,7 +58,7 @@ const Title = s.h1`
 
 var Description = s.p`
   font-family: var(--font-montserrat);
-  font-size:  0.9375rem;  
+  font-size:  0.9375rem;
 `;
 
 const Services = () => (
