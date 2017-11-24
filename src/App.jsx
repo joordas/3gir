@@ -7,7 +7,7 @@ import MenuBar from "./components/MenuBar";
 import LogoHeader from "./components/LogoHeader";
 import HomepageBanner from "./components/HomepageBanner";
 import Services from "./components/Services";
-
+import Footer from "./components/Footer"
 const SideDecoration = s.img`
 position: absolute;
 bottom: 0;
@@ -27,6 +27,7 @@ class App extends Component {
           <Services />
           <SideDecoration src="/public/img/sidethings.svg" />
         </WhitePanel>
+        <Footer />
       </div>
     );
   }
