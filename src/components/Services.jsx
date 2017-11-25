@@ -5,7 +5,7 @@ const Container = s.div`
   // margin-left: 200px;
   position: relative;
   display: flex;  
-  @media (max-width: 1000px) {
+  @media (max-width: 1400px) {
     flex-direction: column;
   }
 `;
@@ -36,7 +36,7 @@ const ServicesPanel = s.div`
   grid-template-columns: 1fr;
   padding: 40px;
   @media (max-width: 1400px) {
-    margin: 30px 30px 50px 50px;
+    margin: 0px 50px 20px;
     z-index: 10;
   }
 `;

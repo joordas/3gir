@@ -6,9 +6,10 @@ const Logo = styled.div`
   max-width: 800px;
   position: relative;
   left: 200px; // best choice? think again later pls;
-  @media (max-width: 1000px) {
+  @media (max-width: 1024px) {
     position: static;
     padding-left: 70px;
+    padding-right: 0;
   }
 `;
 
