@@ -1,6 +1,16 @@
 import React from "react";
 import styled from "styled-components";
+import scrollToElement from "scroll-to-element"
 
+const scrollTo = component => {
+ const element = document.getElementById(component);
+  scrollToElement(element, {
+      offset: 0,
+      ease: 'out-bounce',
+      duration: 1500
+  });
+  console.log(component,element);
+}
 
 const Footerz = styled.div`
   background: #F4F4F4;
@@ -24,7 +34,7 @@ const Footerz = styled.div`
     margin-left: 10px;
   }
 
-  .btn-contact {
+  #btn-contact {
   color: white;
   padding: 10px 15px;
   border-radius: 35px;
@@ -42,9 +52,10 @@ const Footer = () => (
       <a href="#">about us</a>
       </div>
       <div className = "footer-contact">
-        <a href="#" className="btn-contact">contact us</a>
+        <a onClick={scrollTo('services')} id="btn-contact">contact us</a>
     </div>
   </Footerz>
   );
+  
 
 export default Footer;
