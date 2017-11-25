@@ -6,6 +6,7 @@ const Navbar = s.div`
   flex-direction: column;
   justify-content: 'space-between';
   align-items: flex-end;
+  flex-wrap: wrap;
   padding-right: 200px;
   padding-top: 20px;
   ul {
@@ -20,6 +21,13 @@ const Navbar = s.div`
   }
   ul > li {
     margin: 0 10px;
+  }
+  @media (max-width: 1000px) {
+    align-items: flex-start;
+    a {
+      font-size: 1.2rem;
+      font-weight: 400; 
+    }
   }
 `;
 

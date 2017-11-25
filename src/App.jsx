@@ -11,10 +11,13 @@ import Services from "./components/Services";
 import Footer from "./components/Footer"
 import LetsTalk from "./components/LetsTalk";
 const SideDecoration = s.img`
-position: absolute;
-bottom: 0;
-left: 0;
-padding-bottom: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-bottom: 30px;
+@media (max-width: 1400px) {
+  height: 50%;
+}
 `;
 
 class App extends Component {

@@ -11,6 +11,10 @@ const Panel = styled.div`
   display: flex;
   flex-direction: column;
   position: relative;
+  @media (max-width: 1400px) {
+    min-height: 0;
+    margin-top: 0;
+  }
 `;
 
 class WhitePanel extends Component {

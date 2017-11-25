@@ -6,13 +6,19 @@ const Logo = styled.div`
   max-width: 800px;
   position: relative;
   left: 200px; // best choice? think again later pls;
-  span {
-    color: var(--black);
-    font-family: var(--font-montserrat);
-    font-weight: 500;
-    font-size: 1.75rem;
-    text-transform: lowercase;
+  @media (max-width: 1024px) {
+    position: static;
+    padding-left: 70px;
+    padding-right: 0;
   }
+`;
+
+const WeAre = styled.span`
+  color: var(--black);
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  font-size: 1.75rem;
+  text-transform: lowercase;
 `;
 
 const Gradient = styled.span`
@@ -24,6 +30,9 @@ const Gradient = styled.span`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-left: 30px;
+  @media (max-width: 1000px) {
+    font-size: 1.125rem;
+  }
 `;
 
 const LogoSVG = styled.img`
@@ -41,7 +50,7 @@ const Align = styled.span`
 const LogoHeader = () => (
   <Logo>
     <div>
-      <span>we are</span>
+      <WeAre>we are</WeAre>
       <Align>
         <LogoSVG src="/public/img/2.svg" alt="3GiR Logo" />
         <Gradient>— affordable web services.</Gradient>
