@@ -6,11 +6,10 @@ const Gradient = styled.div`
   box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   padding-left: 200px;
-  // height: 100%;
   position: relative;
   flex-grow: 1;
-  div {
-    // height: 100%;
+  @media (max-width: 1400px) {
+    padding-left: 70px;
   }
 `;
 
@@ -24,6 +23,10 @@ const Header = styled.h1`
   letter-spacing: -0.07em;
   max-width: 392px;
   padding-top: 86px;
+  @media (max-width: 1400px) {
+    font-size: 5rem;
+    max-width: 200px;
+  }
 `;
 
 const Subheader = styled.h2`
@@ -34,6 +37,10 @@ const Subheader = styled.h2`
   font-size: 3.188rem;
   margin-top: 50px;
   margin-bottom: 70px;
+  @media (max-width: 1400px) {
+    font-size: 2.3rem;
+    margin-top: 20px;
+  }
 `;
 
 const Contact = styled.a`
@@ -50,6 +57,9 @@ const Contact = styled.a`
   display: inline-block;
   max-width: 140px;
   text-align: center;
+  @media (max-width: 1400px) {
+    margin-bottom: 60px;
+  }
 `;
 
 const LilGuy = styled.img`
@@ -57,6 +67,9 @@ const LilGuy = styled.img`
   height: 100%;
   top: 0;
   right: 0;
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 const HomepageBanner = () => (

@@ -13,6 +13,7 @@ body {
   background-repeat: no-repeat;
   min-height: 100vh;
   padding: 0 20px;
+  overflow-x: hidden;
 }
 
 ul,
@@ -61,4 +62,17 @@ a {
   height: 4px;
   width: 100%;
   background-color: var(--blue);
+}
+
+@media (max-width: 1400px) {
+  body {
+    padding: 10px;
+  }
+  .whatwedo {
+    padding-left: 50px;
+    padding-top: 30px;
+    z-index: 10;
+    flex-direction: column;
+    max-height: 150px;
+  }
 }
