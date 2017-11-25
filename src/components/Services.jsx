@@ -4,10 +4,12 @@ import s from "styled-components";
 const Container = s.div`
   // margin-left: 200px;
   position: relative;
+
   display: flex;  
   @media (max-width: 1400px) {
     flex-direction: column;
   }
+
 `;
 
 const What = s.span`
@@ -65,7 +67,7 @@ const Title = s.h1`
 
 var Description = s.p`
   font-family: var(--font-montserrat);
-  font-size:  0.9375rem;  
+  font-size:  0.9375rem;
 `;
 
 class Services extends Component {

@@ -1,0 +1,65 @@
+<svg width="425" height="878" viewBox="0 0 425 878" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>triangles</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-604 -1506)">
+<g id="triangles">
+<g id="Polygon">
+<use xlink:href="#path0_fill" transform="matrix(-1 -1.22465e-16 1.22465e-16 -1 814 1617)" fill="#3080ED" fill-opacity="0.5"/>
+</g>
+<g id="Polygon">
+<use xlink:href="#path0_fill" transform="matrix(-1 -1.22465e-16 1.22465e-16 -1 1038 1617)" fill="#FF2E63" fill-opacity="0.5"/>
+</g>
+<g id="Polygon">
+<use xlink:href="#path0_fill" transform="matrix(1 5.34378e-24 -5.34378e-24 1 702 1449)" fill="#3080ED" fill-opacity="0.5"/>
+</g>
+<g id="Polygon">
+<use xlink:href="#path0_fill" transform="matrix(1 5.34378e-24 -5.34378e-24 1 818 2364)" fill="#3080ED" fill-opacity="0.5"/>
+</g>
+<g id="Polygon">
+<use xlink:href="#path0_fill" transform="matrix(1 5.34378e-24 -5.34378e-24 1 594 2364)" fill="#FF2E63" fill-opacity="0.5"/>
+</g>
+<g id="Polygon">
+<use xlink:href="#path0_fill" transform="matrix(-1 1.22465e-16 -1.22465e-16 -1 930 2532)" fill="#3080ED" fill-opacity="0.5"/>
+</g>
+<g id="Polygon">
+<use xlink:href="#path0_fill" transform="matrix(-1 1.22465e-16 -1.22465e-16 -1 927 1799)" fill="#8160B7" fill-opacity="0.5"/>
+</g>
+<g id="Polygon">
+<use xlink:href="#path0_fill" transform="matrix(-1 1.22465e-16 -1.22465e-16 -1 1042 1977)" fill="#8160B7" fill-opacity="0.5"/>
+</g>
+<g id="Polygon">
+<use xlink:href="#path0_fill" transform="matrix(-1 1.22465e-16 -1.22465e-16 -1 816 1977)" fill="#3080ED" fill-opacity="0.5"/>
+</g>
+<g id="Polygon">
+<use xlink:href="#path0_fill" transform="matrix(1 7.89111e-24 -7.89111e-24 1 704 1812)" fill="#FF2E63" fill-opacity="0.5"/>
+</g>
+<g id="Polygon">
+<use xlink:href="#path0_fill" transform="matrix(-1 1.22465e-16 -1.22465e-16 -1 1044 2348)" fill="#3080ED" fill-opacity="0.5"/>
+</g>
+<g id="Polygon">
+<use xlink:href="#path0_fill" transform="matrix(-1 1.22465e-16 -1.22465e-16 -1 818 2348)" fill="#FF2E63" fill-opacity="0.5"/>
+</g>
+<g id="Polygon">
+<use xlink:href="#path0_fill" transform="matrix(1 7.89111e-24 -7.89111e-24 1 706 2183)" fill="#8160B7" fill-opacity="0.5"/>
+</g>
+<g id="Polygon">
+<use xlink:href="#path0_fill" transform="matrix(1 -2.44929e-16 2.44929e-16 1 590 1629)" fill="#FF2E63" fill-opacity="0.5"/>
+</g>
+<g id="Polygon">
+<use xlink:href="#path0_fill" transform="matrix(1 -2.44929e-16 2.44929e-16 1 814 1629)" fill="#3080ED" fill-opacity="0.5"/>
+</g>
+<g id="Polygon">
+<use xlink:href="#path0_fill" transform="matrix(-1 1.22465e-16 -1.22465e-16 -1 930 2166)" fill="#3080ED" fill-opacity="0.5"/>
+</g>
+<g id="Polygon">
+<use xlink:href="#path0_fill" transform="matrix(1 -2.44929e-16 2.44929e-16 1 593 1996)" fill="#8160B7" fill-opacity="0.5"/>
+</g>
+<g id="Polygon">
+<use xlink:href="#path0_fill" transform="matrix(1 -2.44929e-16 2.44929e-16 1 817 1996)" fill="#FF2E63" fill-opacity="0.5"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 112.5 0L 209.928 168.75L 15.0721 168.75L 112.5 0Z"/>
+</defs>
+</svg>
