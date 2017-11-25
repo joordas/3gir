@@ -1,25 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
-import scrollToElement from "scroll-to-element"
-
-const scrollTo = component => {
- const element = document.getElementById(component);
-  scrollToElement(element, {
-      offset: 0,
-      ease: 'out-bounce',
-      duration: 1500
-  });
-  console.log(component,element);
-}
+import scrollToElement from "scroll-to-element";
 
 const Footerz = styled.div`
-  background: #F4F4F4;
+  background: #f4f4f4;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100px;
   padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
+  color: rgba(0, 0, 0, 0.3);
   .footer-link {
     display: flex;
     align-items: center;
@@ -35,27 +25,33 @@ const Footerz = styled.div`
   }
 
   #btn-contact {
-  color: white;
-  padding: 10px 15px;
-  border-radius: 35px;
-  background-color: var(--pink);
-  font-weight: lighter;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 35px;
+    background-color: var(--pink);
+    font-weight: lighter;
   }
 `;
 
-const Footer = () => (
-  <Footerz>
-    <div className = "footer-link">
-      <a href='#'>home</a>
-      <a href="#">services</a>
-      <a href="#">portfolio</a>
-      <a href="#">about us</a>
-      </div>
-      <div className = "footer-contact">
-        <a onClick={scrollTo('services')} id="btn-contact">contact us</a>
-    </div>
-  </Footerz>
-  );
-  
+class Footer extends Component {
+  render() {
+    return (
+      <Footerz>
+        <div className="footer-link">
+          <a href="#">home</a>
+          <a href="#">services</a>
+          <a href="#">portfolio</a>
+          <a href="#">about us</a>
+        </div>
+        <div
+          onClick={() => scrollToElement("#services")}
+          className="footer-contact"
+        >
+          <a id="btn-contact">contact us</a>
+        </div>
+      </Footerz>
+    );
+  }
+}
 
 export default Footer;
