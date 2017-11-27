@@ -36,6 +36,7 @@ const Triangles = styled.img`
   top: 0;
   right: 0;
   height: 100%;
+  z-index: -0;
 `;
 
 const LetsTalk = () => (

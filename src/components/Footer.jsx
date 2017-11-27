@@ -9,6 +9,8 @@ const Footerz = styled.div`
   justify-content: space-between;
   height: 100px;
   padding: 0px 50px;
+  border-radius: 2px;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.12);
   color: rgba(0, 0, 0, 0.3);
   margin-top: 60px;
   .footer-link {

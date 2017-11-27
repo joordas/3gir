@@ -464,7 +464,8 @@ select::-ms-expand {
   display: none; /* hide the default arrow in ie10 and ie11 */
 }
 
-select {
+select,
+textarea {
   -moz-appearance: none;
   text-indent: 0.01px;
   text-overflow: "";
@@ -472,4 +473,11 @@ select {
 
 *::placeholder {
   opacity: 1;
+}
+
+select:focus,
+textarea:focus,
+input:focus {
+  outline-color: var(--pink);
+  outline-offset: -2px;
 }
