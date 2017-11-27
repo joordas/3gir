@@ -9,7 +9,7 @@
  *    IE on Windows Phone and in iOS.
  */
 
- html {
+html {
   line-height: 1.15; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -447,4 +447,29 @@ template {
 
 [hidden] {
   display: none;
+}
+
+@-moz-document url-prefix() {
+  select,
+  select:-moz-focusring,
+  select::-moz-focus-inner {
+    color: transparent !important;
+    text-shadow: 0 0 0 #000 !important;
+    background-image: none !important;
+    border: 0;
+  }
+}
+
+select::-ms-expand {
+  display: none; /* hide the default arrow in ie10 and ie11 */
+}
+
+select {
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: "";
+}
+
+*::placeholder {
+  opacity: 1;
 }
