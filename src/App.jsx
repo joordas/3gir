@@ -10,6 +10,7 @@ import HomepageBanner from "./components/HomepageBanner";
 import Services from "./components/Services";
 import Footer from "./components/Footer"
 import LetsTalk from "./components/LetsTalk";
+import AboutUs from "./components/AboutUs";
 const SideDecoration = s.img`
   position: absolute;
   bottom: 0;
@@ -34,6 +35,9 @@ class App extends Component {
           <SideDecoration src="/public/img/sidethings.svg" />
         </WhitePanel>
         <LetsTalk />
+        <WhitePanel>
+        <AboutUs />
+        </WhitePanel>
         <Footer />
       </div>
     );
