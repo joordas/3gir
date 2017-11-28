@@ -40,7 +40,7 @@ const Triangles = styled.img`
 `;
 
 const LetsTalk = () => (
-  <Container>
+  <Container id="contact">
     <Triangles src="/public/img/triangles.svg" />
     <Gradient>let's talk!</Gradient>
     <ContactForm />

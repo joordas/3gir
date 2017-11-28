@@ -47,18 +47,26 @@ const Contact = styled.a`
   // this button needs to be bigger
   color: white;
   background-color: var(--pink);
-  padding: 10px 25px;
-  font-size: 1.75rem;
+  padding: 16px 34px;
+  font-size: 2rem;
   font-family: var(--font-montserrat);
   border-radius: 999rem;
   box-shadow: 0px 0px 10px rgba(255, 46, 99, 0.5);
   flex-grow: 0;
   margin-bottom: 100px;
   display: inline-block;
-  max-width: 140px;
+  max-width: 200px;
   text-align: center;
+  transition: all 0.2s ease-in;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 0px 10px rgba(255, 46, 99, 0.5),
+      0 10px 16px 0 rgba(0, 0, 0, 0.2);
+  }
   @media (max-width: 1400px) {
     margin-bottom: 60px;
+    font-size: 1.75rem;
+    padding: 10px 25px;
   }
 `;
 
