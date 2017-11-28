@@ -16,6 +16,7 @@ const Footerz = styled.div`
   .footer-link {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   a {
     color: var(--blue);
@@ -25,6 +26,7 @@ const Footerz = styled.div`
     font-size: 1.4rem;
     padding: 0px 20px;
     margin-left: 10px;
+    cursor: pointer;
   }
 
   #btn-contact {
@@ -38,16 +40,25 @@ const Footerz = styled.div`
 
 class Footer extends Component {
   render() {
+    const scrollOptions = {
+      offset: -20,
+      ease: "out-bounce",
+      duration: 1500
+    };
     return (
       <Footerz>
         <div className="footer-link">
-          <a href="#">home</a>
-          <a href="#">services</a>
-          <a href="#">portfolio</a>
-          <a href="#">about us</a>
+          <a onClick={() => scrollToElement("#home", scrollOptions)}>home</a>
+          <a onClick={() => scrollToElement("#services", scrollOptions)}>
+            services
+          </a>
+          {/* <a onClick={() => scrollToElement('#portfolio')}>portfolio</a> */}
+          <a onClick={() => scrollToElement("#about", scrollOptions)}>
+            about us
+          </a>
         </div>
         <div
-          onClick={() => scrollToElement("#services")}
+          onClick={() => scrollToElement("#contact", scrollOptions)}
           className="footer-contact"
         >
           <a id="btn-contact">contact us</a>
