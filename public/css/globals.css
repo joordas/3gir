@@ -66,7 +66,7 @@ a {
 
 @media (max-width: 1400px) {
   body {
-    padding: 10px;
+    padding: 10px 10px 0;
   }
   .whatwedo {
     padding-left: 50px;
@@ -75,5 +75,11 @@ a {
     flex-direction: column;
     max-height: 150px;
     max-width: 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    padding: 0;
   }
 }
