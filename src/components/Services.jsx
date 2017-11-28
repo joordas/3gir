@@ -52,11 +52,12 @@ const Service = s.div`
 
 const ServiceImage = s.img`
   width: 100px;
+  fill: blue;
 `;
 
 const Title = s.h1`
   font-family: var(--font-montserrat);
-  font-size: 1.125rem;
+  font-size: 1.250rem;
   font-weight: 500;
   color: black;
   span {

@@ -149,7 +149,7 @@ class ContactForm extends Component {
             name="message"
             id="message"
             cols="40"
-            rows="10"
+            rows="5"
             placeholder="We’ll get back to you very soon! ;)"
           />
         </InputGroup>
