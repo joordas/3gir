@@ -75,7 +75,7 @@ const LilGuy = styled.img`
 const HomepageBanner = () => (
   <Gradient>
     <div>
-      <Header>We makgfhj;;;sde websites.</Header>
+      <Header>We make websites.</Header>
       <Subheader>And then more.</Subheader>
       <Contact href="#">let's talk!</Contact>
     </div>
