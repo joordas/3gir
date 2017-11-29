@@ -11,7 +11,10 @@ const Logo = styled.div`
     padding-left: 70px;
     padding-right: 0;
   }
-`;
+  @media (max-width: 700px) {
+    
+  }
+ `;
 
 const WeAre = styled.span`
   color: var(--black);
@@ -33,11 +36,18 @@ const Gradient = styled.span`
   @media (max-width: 1000px) {
     font-size: 1.125rem;
   }
+  @media (max-width: 700px) {
+    padding-top: 20px;
+  }
 `;
 
 const LogoSVG = styled.img`
   height: 54px;
   width: 198px;
+  @media (max-width: 700px) {
+    padding-left: 0px;
+    margin-left: -85%;
+  }
 `;
 
 const Align = styled.span`
@@ -45,6 +55,9 @@ const Align = styled.span`
   margin-left: 80px;
   padding-top: 10px;
   align-items: center;
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
 `;
 
 const LogoHeader = () => (

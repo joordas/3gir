@@ -9,6 +9,9 @@ const Container = s.div`
   @media (max-width: 1400px) {
     flex-direction: column;
   }
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
 
 `;
 
@@ -28,6 +31,16 @@ top: 0;
 right: 150px;
 `;
 
+
+const WhatWeDoResp = s.div`
+@media (max-width: 700px) {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+`;
+
+
 const ServicesPanel = s.div`
   background-color: #f2f2f2;
   box-shadow: 2px 2px 6px 0 rgba( 0, 0, 0, 0.13), 0 0 25px 5px rgba(0, 0, 0, 0.1);
@@ -39,6 +52,10 @@ const ServicesPanel = s.div`
   padding: 40px;
   @media (max-width: 1400px) {
     margin: 0px 50px 20px;
+    z-index: 10;
+  }
+  @media (max-width: 700px) {
+    margin: auto;
     z-index: 10;
   }
 `;
@@ -76,11 +93,13 @@ class Services extends Component {
     return (
       <Container id="services">
         <LilguyArm id="arm" src="/public/img/lilguyarm.svg" />
+        <WhatWeDoResp>
         <div className="whatwedo">
           <What>what</What>
           <We>we</We>
           <Do>do</Do>
         </div>
+        </WhatWeDoResp>
         <ServicesPanel>
           <Service>
             <ServiceImage src="/public/img/webdesign.svg" />

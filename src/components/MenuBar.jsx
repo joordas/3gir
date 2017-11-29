@@ -55,6 +55,7 @@ const scrollOptions = {
 
 const MenuBar = () => (
   <Navbar id="home">
+
     <ul>
       {/* <li>
         <a href="#">home</a>
