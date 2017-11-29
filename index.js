@@ -43,7 +43,7 @@ app.post("/contact", function(req, res) {
   app.mailer.send(
     "email",
     {
-      to: req.body.email,
+      to: "contact@3gir.com",
       subject: req.body.subject,
       messageContent: req.body.messageContent
     },
