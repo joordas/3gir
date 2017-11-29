@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server",
-    "webpack": "mkdir blabla",
     "start": "node index.js"
   },
   "author": "",
@@ -17,7 +16,11 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "dotenv": "^4.0.0",
     "express": "^4.16.2",
+    "express-mailer": "^0.3.1",
+    "pug": "^2.0.0-rc.4",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "scroll-to-element": "^2.0.0",

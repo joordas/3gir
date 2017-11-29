@@ -102,11 +102,69 @@ const TextArea = styled.textarea`
   }
 `;
 
+const Send = styled.input`
+  background-color: var(--blue);
+  padding: 10px 16px;
+  color: white;
+  text-align: center;
+`;
+
 class ContactForm extends Component {
-  handleSubmit = e => {
-    e.preventDefault();
+  state = {
+    name: "",
+    email: "",
+    subject: "webdesign",
+    messageContent: "",
+    formSent: false
   };
 
+  handleNameChange = e => {
+    const name = e.target.value;
+    this.setState({ name });
+  };
+
+  handleEmailChange = e => {
+    const email = e.target.value;
+    this.setState({ email });
+  };
+
+  handleSubjectChange = e => {
+    const subject = e.target.value;
+    this.setState({ subject });
+  };
+
+  handleMessageChange = e => {
+    const messageContent = e.target.value;
+    this.setState({ messageContent });
+  };
+
+  handleSubmit = submitEvent => {
+    submitEvent.preventDefault();
+    const form = document.getElementById("contact-form");
+    const { name, email, subject, messageContent } = this.state;
+    const body = JSON.stringify({ name, email, subject, messageContent });
+    // form.reset();
+    fetch("/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      },
+      body
+    })
+      .then(() =>
+        this.setState({
+          name: "",
+          email: "",
+          subject: "webdesign",
+          messageContent: "",
+          formSent: true
+        })
+      )
+      .catch(error => {
+        console.error(error);
+      });
+  };
   renderOptions = options => {
     return options.map(option => (
       <option key={option} value={option}>
@@ -125,7 +183,7 @@ class ContactForm extends Component {
       "others"
     ]; // change here to add more options or edit the subject selector
     return (
-      <Form onSubmit={this.handleSubmit}>
+      <Form onSubmit={this.handleSubmit} id="contact-form">
         <InputGroup>
           <Label htmlFor="name">your name:</Label>
           <TextInput
@@ -133,15 +191,29 @@ class ContactForm extends Component {
             id="name"
             name="name"
             placeholder="Yuri Gagarin"
+            value={this.state.name}
+            onChange={this.handleNameChange}
           />
         </InputGroup>
         <InputGroup>
           <Label htmlFor="email">your email:</Label>
-          <TextInput type="text" name="email" placeholder="yuri@spacex.com" />
+          <TextInput
+            type="email"
+            name="email"
+            placeholder="yuri@spacex.com"
+            value={this.state.email}
+            onChange={this.handleEmailChange}
+          />
         </InputGroup>
         <InputGroup className="select">
           <Label htmlFor="subject">what do you want to talk to us about?</Label>
-          <Select id="subject">{this.renderOptions(options)}</Select>
+          <Select
+            id="subject"
+            value={this.state.value}
+            onChange={this.handleSubjectChange}
+          >
+            {this.renderOptions(options)}
+          </Select>
         </InputGroup>
         <InputGroup>
           <Label htmlFor="message">write us a message:</Label>
@@ -151,8 +223,11 @@ class ContactForm extends Component {
             cols="40"
             rows="5"
             placeholder="We’ll get back to you very soon! ;)"
+            value={this.state.messageContent}
+            onChange={this.handleMessageChange}
           />
         </InputGroup>
+        <input type="submit" value="senasdasd :)" />
       </Form>
     );
   }

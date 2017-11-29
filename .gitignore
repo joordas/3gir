@@ -7,3 +7,5 @@ publick/*bundle*
 *.map
 *.bundle.js
 .sass-cache/
+.env
+*.env
