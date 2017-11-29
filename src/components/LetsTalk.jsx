@@ -13,7 +13,6 @@ const Container = styled.div`
   @media (max-width: 700px) {
     padding-left: 20%;
     align-items: center;
-
   }
 `;
 
@@ -42,9 +41,9 @@ const Triangles = styled.img`
   right: 0;
   height: 100%;
   z-index: -0;
-    @media (max-width:700px) {
-      display: none;
-    }
+  @media (max-width: 1200px) {
+    display: none;
+  }
 `;
 
 const LetsTalk = () => (
