@@ -1,4 +1,8 @@
-require("dotenv").config({ path: __dirname + "/process.env" });
+// require("dotenv").config({ path: __dirname + "/process.env" });
+require("dotenv").config({
+  path: process.env.HOME + "/var/www/3gir.com/process.env"
+});
+
 var express = require("express");
 var app = express();
 var path = require("path");
