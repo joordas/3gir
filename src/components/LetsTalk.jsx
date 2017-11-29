@@ -10,6 +10,11 @@ const Container = styled.div`
   flex-grow: 1;
   min-height: 400px;
   padding-left: 200px;
+  @media (max-width: 700px) {
+    padding-left: 20%;
+    align-items: center;
+
+  }
 `;
 
 const Gradient = styled.span`
@@ -37,6 +42,9 @@ const Triangles = styled.img`
   right: 0;
   height: 100%;
   z-index: -0;
+    @media (max-width:700px) {
+      display: none;
+    }
 `;
 
 const LetsTalk = () => (

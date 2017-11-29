@@ -29,6 +29,9 @@ const LilguyArm = s.img`
 position: absolute;
 top: 0;
 right: 150px;
+@media (max-width: 700px) {
+  display: none;
+}
 `;
 
 
@@ -93,13 +96,13 @@ class Services extends Component {
     return (
       <Container id="services">
         <LilguyArm id="arm" src="/public/img/lilguyarm.svg" />
-        <WhatWeDoResp>
+        {/* <WhatWeDoResp> */}
         <div className="whatwedo">
           <What>what</What>
           <We>we</We>
           <Do>do</Do>
         </div>
-        </WhatWeDoResp>
+        {/* </WhatWeDoResp> */}
         <ServicesPanel>
           <Service>
             <ServiceImage src="/public/img/webdesign.svg" />
