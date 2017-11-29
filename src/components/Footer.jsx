@@ -13,6 +13,10 @@ const Footerz = styled.div`
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.12);
   color: rgba(0, 0, 0, 0.3);
   margin-top: 60px;
+  @media (max-width: 700px) {
+    align-items: flex-start;
+    padding: 0px 1px;
+  }
   .footer-link {
     display: flex;
     align-items: center;
@@ -27,6 +31,11 @@ const Footerz = styled.div`
     padding: 0px 20px;
     margin-left: 10px;
     cursor: pointer;
+    @media (max-width: 700px) {
+      font-size: 1rem;
+      margin-left: 0px;
+      margin-top: 10px;
+    }
   }
 
   #btn-contact {
@@ -35,6 +44,11 @@ const Footerz = styled.div`
     border-radius: 35px;
     background-color: var(--pink);
     font-weight: 200;
+    @media (max-width: 700px) {
+      margin-top: 10px;
+      font-size: 1rem;
+      padding: 10px 9px;
+    }
   }
 `;
 

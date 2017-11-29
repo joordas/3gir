@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 import s from "styled-components";
-
+// import Responsive from 'react-responsive';
 // components
 import WhitePanel from "./components/WhitePanel";
 import MenuBar from "./components/MenuBar";
@@ -10,6 +10,9 @@ import HomepageBanner from "./components/HomepageBanner";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
 import LetsTalk from "./components/LetsTalk";
+
+
+
 
 const SideDecoration = s.img`
   position: absolute;

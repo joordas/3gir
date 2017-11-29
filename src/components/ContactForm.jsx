@@ -16,6 +16,12 @@ const InputGroup = styled.div`
       background: url("/public/img/arrow.svg") no-repeat right 70px;
     }
   }
+  @media (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 20%;
+  }
 `;
 
 const Label = styled.label`
@@ -38,6 +44,9 @@ const TextInput = styled.input`
   padding: 1px 3px;
   &::placeholder {
     color: var(--blue);
+    @media (max-width: 700px) {
+      text-align: center;
+    }
   }
 `;
 
@@ -89,12 +98,19 @@ const TextArea = styled.textarea`
   padding: 6px 8px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  @media (max-width: 700px) {
+    width: 120%;
+  }
   &::placeholder {
     font-family: var(--font-montserrat);
     font-weight: 400;
     font-size: 1.675rem;
     opacity: 0.6;
     color: var(--blue);
+    @media (max-width: 700px) {
+      font-weight: 300px;
+      font-size: 1.35rem;
+    }
   }
   &:hover {
     box-shadow: 10px 14px 38px rgba(0, 0, 0, 0.14),
