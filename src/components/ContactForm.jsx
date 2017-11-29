@@ -6,6 +6,7 @@ const Form = styled.form`
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 660px;
+  z-index: 100;
 `;
 
 const InputGroup = styled.div`
@@ -119,10 +120,25 @@ const TextArea = styled.textarea`
 `;
 
 const Send = styled.input`
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  font-size: 1.275rem;
+  letter-spacing: 4px;
+  border-radius: 2px;
   background-color: var(--blue);
   padding: 10px 16px;
   color: white;
   text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  margin-top: -50px;
+  margin-bottom: 100px;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
+    letter-spacing: 5px;
+  }
 `;
 
 class ContactForm extends Component {
@@ -209,6 +225,7 @@ class ContactForm extends Component {
             placeholder="Yuri Gagarin"
             value={this.state.name}
             onChange={this.handleNameChange}
+            required
           />
         </InputGroup>
         <InputGroup>
@@ -219,6 +236,7 @@ class ContactForm extends Component {
             placeholder="yuri@spacex.com"
             value={this.state.email}
             onChange={this.handleEmailChange}
+            required
           />
         </InputGroup>
         <InputGroup className="select">
@@ -241,9 +259,11 @@ class ContactForm extends Component {
             placeholder="We’ll get back to you very soon! ;)"
             value={this.state.messageContent}
             onChange={this.handleMessageChange}
+            required
+            minlength="5"
           />
         </InputGroup>
-        <input type="submit" value="senasdasd :)" />
+        <Send type="submit" value="SEND" />
       </Form>
     );
   }
