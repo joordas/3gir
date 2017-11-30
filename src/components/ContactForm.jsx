@@ -124,6 +124,7 @@ const Send = styled.input`
   font-weight: 500;
   font-size: 1.275rem;
   letter-spacing: 4px;
+  text-transform: upper-case;
   border-radius: 2px;
   background-color: var(--blue);
   padding: 10px 16px;
@@ -134,6 +135,7 @@ const Send = styled.input`
   transition: all 0.2s ease-in;
   margin-top: -50px;
   margin-bottom: 100px;
+  background-color: ${props => (props.sent ? "mediumseagreen" : "var(--blue)")};
   &:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
@@ -263,7 +265,11 @@ class ContactForm extends Component {
             minlength="5"
           />
         </InputGroup>
-        <Send type="submit" value="SEND" />
+        <Send
+          type="submit"
+          value={this.state.formSent ? "message sent! &#10004;" : "send"}
+          sent={this.state.formSent}
+        />
       </Form>
     );
   }
