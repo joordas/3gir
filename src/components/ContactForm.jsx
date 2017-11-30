@@ -45,9 +45,16 @@ const TextInput = styled.input`
   padding: 1px 3px;
   &::placeholder {
     color: var(--blue);
+    opacity: 0.6;
     @media (max-width: 700px) {
       text-align: center;
     }
+  }
+  &:focus {
+    outline: none;
+  }
+  &:invalid {
+    box-shadow: none;
   }
 `;
 
@@ -124,7 +131,7 @@ const Send = styled.input`
   font-weight: 500;
   font-size: 1.275rem;
   letter-spacing: 4px;
-  text-transform: upper-case;
+  text-transform: uppercase;
   border-radius: 2px;
   background-color: var(--blue);
   padding: 10px 16px;
