@@ -34,7 +34,6 @@ right: 150px;
 }
 `;
 
-
 const WhatWeDoResp = s.div`
 @media (max-width: 700px) {
   flex-direction: column;
@@ -42,7 +41,6 @@ const WhatWeDoResp = s.div`
   align-items: center;
 }
 `;
-
 
 const ServicesPanel = s.div`
   background-color: #f2f2f2;
@@ -68,11 +66,18 @@ const Service = s.div`
   grid-template-columns: 100px 1fr;
   padding: 20px;
   grid-column-gap: 50px;
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
 `;
 
 const ServiceImage = s.img`
   width: 100px;
   fill: blue;
+  @media (max-width: 700px) {
+    margin: 0 auto;
+  }
 `;
 
 const Title = s.h1`

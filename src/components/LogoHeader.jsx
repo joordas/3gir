@@ -12,9 +12,9 @@ const Logo = styled.div`
     padding-right: 0;
   }
   @media (max-width: 700px) {
-    
+    padding-left: 20px;
   }
- `;
+`;
 
 const WeAre = styled.span`
   color: var(--black);
@@ -38,6 +38,8 @@ const Gradient = styled.span`
   }
   @media (max-width: 700px) {
     padding-top: 20px;
+    padding-left: 0;
+    margin-left: 0;
   }
 `;
 
@@ -46,7 +48,6 @@ const LogoSVG = styled.img`
   width: 198px;
   @media (max-width: 700px) {
     padding-left: 0px;
-    margin-left: -85%;
   }
 `;
 
@@ -57,6 +58,8 @@ const Align = styled.span`
   align-items: center;
   @media (max-width: 700px) {
     flex-direction: column;
+    margin-left: 0;
+    align-items: flex-start;
   }
 `;
 
