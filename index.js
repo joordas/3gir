@@ -1,7 +1,10 @@
-// require("dotenv").config({ path: __dirname + "/process.env" });
-require("dotenv").config({
-  path: process.env.HOME + "/var/www/3gir.com/process.env"
-});
+if (process.env.NODE_ENV === "development") {
+  require("dotenv").config({ path: __dirname + "/process.env" });
+} else {
+  require("dotenv").config({
+    path: process.env.HOME + "/var/www/3gir.com/process.env"
+  });
+}
 
 var express = require("express");
 var app = express();
@@ -19,12 +22,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // parse application/json
 app.use(bodyParser.json());
-
-// app.use(function (req, res) {
-//   res.setHeader('Content-Type', 'text/plain')
-//   res.write('you posted:\n')
-//   res.end(JSON.stringify(req.body, null, 2))
-// })
 
 mailer.extend(app, {
   from: "app@3gir.com",
@@ -49,7 +46,8 @@ app.post("/contact", function(req, res) {
     {
       to: "contact@3gir.com",
       subject: req.body.subject,
-      messageContent: req.body.messageContent
+      messageContent: req.body.messageContent,
+      from: req.body.email
     },
     function(err) {
       if (err) {
