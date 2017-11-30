@@ -274,7 +274,7 @@ class ContactForm extends Component {
         </InputGroup>
         <Send
           type="submit"
-          value={this.state.formSent ? "message sent! &#10004;" : "send"}
+          value={this.state.formSent ? "message sent!" : "send"}
           sent={this.state.formSent}
         />
       </Form>
