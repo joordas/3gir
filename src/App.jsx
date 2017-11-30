@@ -11,9 +11,6 @@ import Services from "./components/Services";
 import Footer from "./components/Footer";
 import LetsTalk from "./components/LetsTalk";
 
-
-
-
 const SideDecoration = s.img`
   position: absolute;
   bottom: 0;
@@ -21,6 +18,9 @@ const SideDecoration = s.img`
   padding-bottom: 30px;
 @media (max-width: 1400px) {
   height: 50%;
+}
+@media (max-width: 700px) {
+  display: none;
 }
 `;
 

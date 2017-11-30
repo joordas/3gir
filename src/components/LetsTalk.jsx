@@ -11,7 +11,7 @@ const Container = styled.div`
   min-height: 400px;
   padding-left: 200px;
   @media (max-width: 700px) {
-    padding-left: 20%;
+    padding-left: 0;
     align-items: center;
   }
 `;
@@ -33,6 +33,10 @@ const Gradient = styled.span`
   -webkit-text-fill-color: transparent;
   padding-top: 40px;
   margin-bottom: 50px;
+  @media (max-width: 700px) {
+    text-align: center;
+    font-size: 4rem;
+  }
 `;
 
 const Triangles = styled.img`

@@ -6,6 +6,7 @@ const Form = styled.form`
   flex-direction: column;
   flex-wrap: wrap;
   max-width: 660px;
+
   z-index: 100;
 `;
 
@@ -21,7 +22,6 @@ const InputGroup = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-right: 20%;
   }
 `;
 
@@ -32,6 +32,9 @@ const Label = styled.label`
   font-size: 1.625rem;
   margin-right: 20px;
   margin-bottom: 20px;
+  @media (max-width: 700px) {
+    text-align: center;
+  }
 `;
 
 const TextInput = styled.input`
@@ -107,7 +110,8 @@ const TextArea = styled.textarea`
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   @media (max-width: 700px) {
-    width: 120%;
+    max-width: 100vw;
+    overflow-x: hidden;
   }
   &::placeholder {
     font-family: var(--font-montserrat);
@@ -147,6 +151,10 @@ const Send = styled.input`
     transform: translateY(-2px);
     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
     letter-spacing: 5px;
+  }
+  @media (max-width: 700px) {
+    // max-width: 90vw;
+    margin: 0 40px 20px;
   }
 `;
 
@@ -263,7 +271,7 @@ class ContactForm extends Component {
           <TextArea
             name="message"
             id="message"
-            cols="40"
+            cols="30"
             rows="5"
             placeholder="We’ll get back to you very soon! ;)"
             value={this.state.messageContent}

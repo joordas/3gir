@@ -5,6 +5,7 @@ import scrollToElement from "scroll-to-element";
 const Footerz = styled.div`
   background: #f4f4f4;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   height: 100px;
@@ -15,7 +16,7 @@ const Footerz = styled.div`
   margin-top: 60px;
   @media (max-width: 700px) {
     align-items: flex-start;
-    padding: 0px 1px;
+    padding: 10px 5px;
   }
   .footer-link {
     display: flex;
@@ -32,7 +33,8 @@ const Footerz = styled.div`
     margin-left: 10px;
     cursor: pointer;
     @media (max-width: 700px) {
-      font-size: 1rem;
+      font-size: 0.85rem;
+      font-weight: 400;
       margin-left: 0px;
       margin-top: 10px;
     }
@@ -43,10 +45,10 @@ const Footerz = styled.div`
     padding: 10px 15px;
     border-radius: 35px;
     background-color: var(--pink);
-    font-weight: 200;
+    font-weight: 400;
     @media (max-width: 700px) {
-      margin-top: 10px;
       font-size: 1rem;
+      font-weight: 500;
       padding: 10px 9px;
     }
   }
