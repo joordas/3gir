@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 import s from "styled-components";
-// import Responsive from 'react-responsive';
+import { BrowserRouter, Route } from "react-router-dom";
 // components
 import WhitePanel from "./components/WhitePanel";
 import MenuBar from "./components/MenuBar";
@@ -10,6 +10,8 @@ import HomepageBanner from "./components/HomepageBanner";
 import Services from "./components/Services";
 import Footer from "./components/Footer";
 import LetsTalk from "./components/LetsTalk";
+
+import Homepage from "./components/Homepage";
 
 const SideDecoration = s.img`
   position: absolute;
@@ -27,21 +29,9 @@ const SideDecoration = s.img`
 class App extends Component {
   render() {
     return (
-      <div>
-        <WhitePanel>
-          <MenuBar />
-          <LogoHeader />
-          <HomepageBanner />
-        </WhitePanel>
-        <WhitePanel>
-          <Services />
-          <SideDecoration src="/public/img/sidethings.svg" />
-        </WhitePanel>
-        <WhitePanel>
-          <LetsTalk />
-        </WhitePanel>
-        <Footer />
-      </div>
+      <BrowserRouter>
+        <Route exact path="/" component={Homepage} />
+      </BrowserRouter>
     );
   }
 }

@@ -1,39 +1,36 @@
 import React from "react";
 import styled from "styled-components";
 
-const Gradient = styled.div`
-  background: linear-gradient(121.27deg, #3080ed -11.21%, #ff2f64 125.18%);
-  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.25);
-  border-radius: 3px;
-  padding-left: 200px;
-  position: relative;
-  flex-grow: 1;
+const Background = styled.div`
+  background-color: var(--lightGrey);
+  padding-left: 4.375rem;
   @media (max-width: 1400px) {
-    padding-left: 70px;
+    padding-left: 30px;
   }
 `;
 
 const Header = styled.h1`
-  color: white;
+  color: var(--black);
   margin: 0;
   font-family: var(--font-serif);
   font-weight: 400;
-  line-height: 90px;
-  font-size: 7rem;
+  line-height: 7.688rem;
+  font-size: 9rem;
   letter-spacing: -0.07em;
   max-width: 392px;
-  padding-top: 86px;
   @media (max-width: 1400px) {
-    font-size: 5rem;
+    font-size: 6rem;
     max-width: 200px;
+    line-height: 5rem;
   }
 `;
 
 const Subheader = styled.h2`
-  color: white;
+  color: var(--black);
   margin: 0;
   font-family: var(--font-serif);
   font-weight: 400;
+  line-height: 38px;
   font-size: 3.188rem;
   margin-top: 50px;
   margin-bottom: 70px;
@@ -45,8 +42,9 @@ const Subheader = styled.h2`
 
 const Contact = styled.a`
   // this button needs to be bigger
-  color: white;
-  background-color: var(--pink);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+  background-color: white;
   padding: 16px 34px;
   font-size: 2rem;
   font-family: var(--font-montserrat);
@@ -58,6 +56,7 @@ const Contact = styled.a`
   max-width: 200px;
   text-align: center;
   transition: all 0.2s ease-in;
+  cursor: pointer;
   &:hover {
     transform: translateY(-2px);
     box-shadow: 0px 0px 10px rgba(255, 46, 99, 0.5),
@@ -70,25 +69,14 @@ const Contact = styled.a`
   }
 `;
 
-const LilGuy = styled.img`
-  position: absolute;
-  height: 100%;
-  top: 0;
-  right: 0;
-  @media (max-width: 1000px) {
-    display: none;
-  }
-`;
-
 const HomepageBanner = () => (
-  <Gradient>
-    <div>
-      <Header>We make websites.</Header>
-      <Subheader>And then more.</Subheader>
-      <Contact href="#">let's talk!</Contact>
-    </div>
-    <LilGuy id="lilguy" src="/public/img/lil guy.svg" />
-  </Gradient>
+  <Background>
+    <Header>We make websites.</Header>
+    <Subheader>And then more.</Subheader>
+    <Contact onClick={() => scrollToElement("#contact", scrollOptions)}>
+      let's talk!
+    </Contact>
+  </Background>
 );
 
 export default HomepageBanner;
