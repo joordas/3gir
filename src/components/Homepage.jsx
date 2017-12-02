@@ -19,6 +19,7 @@ class Homepage extends Component {
       const navBarFixed = findDOMNode(element).getBoundingClientRect().y;
       this.setState({ navBarFixed: navBarFixed < 0, scrollTop: navBarFixed }),
         300;
+      console.log(navBarFixed);
     });
   };
 
@@ -34,10 +35,26 @@ class Homepage extends Component {
     });
   };
 
+  changeServicesPanel() {
+    var h = Math.max(
+      document.documentElement.clientHeight,
+      window.innerHeight || 0
+    );
+
+    console.log(h);
+  }
+
+  componentDidMount() {
+    this.changeServicesPanel();
+  }
+
   render() {
     return (
       <div>
-        <LogoHeader navBarFixed={this.state.navBarFixed} />
+        <LogoHeader
+          scrollTop={this.state.scrollTop}
+          navBarFixed={this.state.navBarFixed}
+        />
         <HomepageBanner
           fixNavBar={this.handleScroll}
           scrollTop={this.state.scrollTop}

@@ -471,7 +471,8 @@ textarea {
   text-overflow: "";
 }
 
-*::placeholder {
+textarea::placeholder,
+input::placeholder {
   opacity: 1;
 }
 

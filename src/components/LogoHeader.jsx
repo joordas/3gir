@@ -59,7 +59,15 @@ class LogoHeader extends Component {
   render() {
     return (
       <Logo to="/" className={this.props.navBarFixed ? "fixed" : ""}>
-        <Wrapper>
+        <Wrapper
+          style={{
+            backgroundColor: `rgb(${Math.floor(
+              245 + this.props.scrollTop / 5
+            )}, ${Math.floor(245 + this.props.scrollTop / 5)}, ${Math.floor(
+              245 + this.props.scrollTop / 5
+            )})`
+          }}
+        >
           <Align>
             <LogoSVG src="/public/img/2.svg" alt="3GiR Logo" />
             <Gradient>— affordable web services.</Gradient>
