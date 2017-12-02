@@ -6,7 +6,8 @@
 }
 
 .rect {
-  transition-duration: 2s;
+  transition-duration: 0.3s;
+  fill: #333;
 }
 
 .rect:hover {

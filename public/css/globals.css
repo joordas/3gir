@@ -11,8 +11,7 @@
 body {
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 100vh;
-  padding: 0 20px;
+  min-height: 250vh;
   overflow-x: hidden;
   background-color: var(--lightGrey);
 }
@@ -65,21 +64,6 @@ a {
   background-color: var(--blue);
 }
 
-@media (max-width: 1400px) {
-  body {
-    padding: 10px 10px 0;
-  }
-  .whatwedo {
-    padding-left: 50px;
-    padding-top: 30px;
-    margin-bottom: 20px;
-    z-index: 10;
-    flex-direction: column;
-    max-height: 150px;
-    max-width: 400px;
-  }
-}
-
 @media (max-width: 700px) {
   .whatwedo {
     display: flex;
@@ -91,14 +75,4 @@ a {
     max-height: 150px;
     max-width: 400px;
   }
-}
-
-@media (max-width: 1000px) {
-  body {
-    padding: 0;
-  }
-}
-
-.footer-contact {
-  margin-top: 10px;
 }

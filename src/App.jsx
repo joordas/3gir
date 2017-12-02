@@ -30,7 +30,10 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <Route exact path="/" component={Homepage} />
+        <div>
+          <Route exact path="/" component={Homepage} />
+          <Route exact path="/contact" component={LetsTalk} />
+        </div>
       </BrowserRouter>
     );
   }

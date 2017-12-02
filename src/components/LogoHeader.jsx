@@ -1,9 +1,24 @@
-import React from "react";
+import React, { Component } from "react";
+import { findDOMNode } from "react-dom";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-const Logo = styled.div`
+const Logo = styled(Link)`
+  position: fixed;
+  transition: all 0.3s ease-out;
+  &.fixed {
+    background-color: white;
+    div {
+      padding: 20px 0 20px 4.375rem;
+    }
+  }
+`;
+
+const Wrapper = styled.div`
+  transition: all 0.3s ease-out;
   padding: 60px 0 60px 4.375rem;
   z-index: 2;
+  width: 100vw;
   @media (max-width: 1400px) {
     padding-left: 30px;
   }
@@ -40,15 +55,19 @@ const Align = styled.span`
   }
 `;
 
-const LogoHeader = () => (
-  <Logo>
-    <div>
-      <Align>
-        <LogoSVG src="/public/img/2.svg" alt="3GiR Logo" />
-        <Gradient>— affordable web services.</Gradient>
-      </Align>
-    </div>
-  </Logo>
-);
+class LogoHeader extends Component {
+  render() {
+    return (
+      <Logo to="/" className={this.props.navBarFixed ? "fixed" : ""}>
+        <Wrapper>
+          <Align>
+            <LogoSVG src="/public/img/2.svg" alt="3GiR Logo" />
+            <Gradient>— affordable web services.</Gradient>
+          </Align>
+        </Wrapper>
+      </Logo>
+    );
+  }
+}
 
 export default LogoHeader;
