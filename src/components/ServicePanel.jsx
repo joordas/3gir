@@ -59,7 +59,7 @@ const ServiceName = styled.h3`
   margin: 0;
   position: relative;
   &:after {
-    background-color: var(--blue);
+    background-color: ${props => props.borderColor};
     content: "";
     width: 100%;
     height: 12px;
@@ -72,7 +72,7 @@ const ServiceName = styled.h3`
 
 const Border = styled.div`
   border-radius: 1px;
-  background-color: var(--blue);
+  background-color: ${props => props.borderColor};
   position: absolute;
   top: 30px;
   left: -30px;
@@ -94,10 +94,10 @@ class ServicePanel extends Component {
           <PanelContent>
             <Inner>
               <Title>Pixel Perfect</Title>
-              <ServiceName>Webdesign</ServiceName>
+              <ServiceName>{this.props.title}</ServiceName>
             </Inner>
           </PanelContent>
-          <Border />
+          <Border borderColor={this.props.borderColor} />
         </Panel>
       </Align>
     );

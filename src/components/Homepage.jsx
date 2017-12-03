@@ -7,6 +7,7 @@ import { debounce } from "lodash";
 import LogoHeader from "./LogoHeader";
 import HomepageBanner from "./HomepageBanner";
 import ServicePanel from "./ServicePanel";
+import ServicePanelsSlider from "./ServicePanelsSlider";
 
 class Homepage extends Component {
   state = {
@@ -16,7 +17,7 @@ class Homepage extends Component {
 
   handleScroll = element => {
     window.addEventListener("scroll", () => {
-      const navBarFixed = findDOMNode(element).getBoundingClientRect().y;
+      const navBarFixed = window.scrollY * -1;
       this.setState({ navBarFixed: navBarFixed < 0, scrollTop: navBarFixed }),
         300;
       console.log(navBarFixed);
@@ -64,9 +65,10 @@ class Homepage extends Component {
           className="rects"
           onLoad={this.animateRectangles}
         />
-        <ServicePanel
+        <ServicePanelsSlider
           borderColor="var(--blue)"
           scrollTop={this.state.scrollTop}
+          title="e-commerce"
         />
       </div>
     );
