@@ -8,6 +8,7 @@ import LogoHeader from "./LogoHeader";
 import HomepageBanner from "./HomepageBanner";
 import ServicePanel from "./ServicePanel";
 import ServicePanelsSlider from "./ServicePanelsSlider";
+import LetsTalk from "./LetsTalk";
 
 class Homepage extends Component {
   state = {
@@ -20,7 +21,6 @@ class Homepage extends Component {
       const navBarFixed = window.scrollY * -1;
       this.setState({ navBarFixed: navBarFixed < 0, scrollTop: navBarFixed }),
         300;
-      console.log(navBarFixed);
     });
   };
 
@@ -35,19 +35,6 @@ class Homepage extends Component {
       )})`;
     });
   };
-
-  changeServicesPanel() {
-    var h = Math.max(
-      document.documentElement.clientHeight,
-      window.innerHeight || 0
-    );
-
-    console.log(h);
-  }
-
-  componentDidMount() {
-    this.changeServicesPanel();
-  }
 
   render() {
     return (
@@ -67,9 +54,9 @@ class Homepage extends Component {
         />
         <ServicePanelsSlider
           borderColor="var(--blue)"
-          scrollTop={this.state.scrollTop}
-          title="e-commerce"
+          scrollTop={this.state.scrollTop * -1}
         />
+        <LetsTalk />
       </div>
     );
   }

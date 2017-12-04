@@ -22,17 +22,6 @@ const Align = styled.div`
   padding-top: 40px;
 `;
 
-const WhatWeDo = styled.h2`
-  font-family: var(--font-montserrat);
-  font-size: 4.5rem;
-  font-weight: 700;
-  margin: 0;
-  color: white;
-  align-self: flex-start;
-  margin-left: 4.375rem;
-  margin-top: 1rem;
-`;
-
 const PanelContent = styled.div`
   background-color: white;
   height: 100%;
@@ -89,12 +78,13 @@ class ServicePanel extends Component {
   render() {
     return (
       <Align>
-        <WhatWeDo>what we do</WhatWeDo>
         <Panel>
           <PanelContent>
             <Inner>
               <Title>Pixel Perfect</Title>
-              <ServiceName>{this.props.title}</ServiceName>
+              <ServiceName borderColor={this.props.borderColor}>
+                {this.props.title}
+              </ServiceName>
             </Inner>
           </PanelContent>
           <Border borderColor={this.props.borderColor} />
