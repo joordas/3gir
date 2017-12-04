@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
+import services from "../services";
+
 import ServicePanel from "./ServicePanel";
 
 const ProgressBar = styled.span`
@@ -14,6 +16,11 @@ const ProgressBar = styled.span`
 `;
 
 const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
   // position: sticky;
   // top: 0px;
   // left: 0px;
@@ -28,6 +35,15 @@ const WhatWeDo = styled.h2`
   align-self: flex-start;
   margin-left: 4.375rem;
   margin-top: 1rem;
+  color: ${props =>
+    `rgb(${Math.floor(25 - props.scrollTop / 1.2)}, ${Math.floor(
+      25 - props.scrollTop / 1.2
+    )}, ${Math.floor(25 - props.scrollTop / 1.2)})`};
+
+  @media (max-width: 800px) {
+    margin-left: 20px;
+    font-size: 3rem;
+  }
 `;
 
 const pages = [
@@ -75,10 +91,13 @@ class ServicePanelsSlider extends Component {
         className={this.state.fixed ? "fixed" : ""}
         ref={div => (this.sliderTop = div)}
       >
-        <WhatWeDo>what we do</WhatWeDo>
-        <ServicePanel title="Webdesign" borderColor="var(--blue)" />
+        <WhatWeDo scrollTop={this.props.scrollTop}>what we do</WhatWeDo>
+        {services.map(service => (
+          <ServicePanel key={service.name} service={service} />
+        ))}
+        {/* <ServicePanel title="Webdesign" borderColor="var(--blue)" />
         <ServicePanel title="E-Commerce" borderColor="var(--pink)" />
-        <ServicePanel title="E-Commerce" borderColor="var(--yellow)" />
+        <ServicePanel title="E-Commerce" borderColor="var(--yellow)" /> */}
       </Wrapper>
     );
   }

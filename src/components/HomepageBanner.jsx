@@ -22,6 +22,8 @@ const Header = styled.h1`
   font-size: 9rem;
   letter-spacing: -0.07em;
   max-width: 392px;
+  z-index: 100;
+  // overflow-x: hidden;
   @media (max-width: 1400px) {
     font-size: 6rem;
     max-width: 200px;

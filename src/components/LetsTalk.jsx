@@ -4,12 +4,13 @@ import styled from "styled-components";
 import ContactForm from "./ContactForm";
 
 const Container = styled.div`
-  // display: flex;
+  display: flex;
+  max-width: 100vw;
   flex-direction: column;
   position: relative;
   flex-grow: 1;
   min-height: 400px;
-  padding-left: 4.375rem;
+  margin-bottom: 40px;
   @media (max-width: 700px) {
     padding-left: 0;
     align-items: center;
@@ -24,7 +25,10 @@ const Container = styled.div`
     width: 50%;
     background-color: var(--lightGrey);
     border-radius: 2px;
-    z-index: -1;
+    z-index: -2;
+    @media (max-width: 800px) {
+      display: none;
+    }
   }
 `;
 
@@ -38,19 +42,32 @@ const Title = styled.span`
   padding-top: 40px;
   margin-bottom: 50px;
   position: relative;
+  margin-left: 4.375rem;
   &:after {
     background-color: var(--lightGrey);
     content: "";
     width: 100%;
-    height: 12px;
+    height: 20px;
     position: absolute;
-    bottom: 0;
+    bottom: 15px;
     left: 0;
-    z-index: 2;
+    z-index: -1;
   }
   @media (max-width: 700px) {
     text-align: center;
     font-size: 4rem;
+    margin-left: 0;
+  }
+`;
+
+const SideRectangles = styled.img`
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  max-height: 100%;
+  @media (max-width: 700px) {
+    display: none;
   }
 `;
 
@@ -58,6 +75,7 @@ const LetsTalk = () => (
   <Container id="contact">
     <Title>contact</Title>
     <ContactForm />
+    <SideRectangles src="/public/img/side_rectangles.svg" />
   </Container>
 );
 

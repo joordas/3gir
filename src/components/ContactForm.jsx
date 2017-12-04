@@ -1,14 +1,29 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
-const Form = styled.form`
-  display: flex;
-  flex-direction: column;
+const Wrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.12);
+  padding: 37px 53px;
+  border-radius: 3px;
+  max-width: 1200px;
   flex-wrap: wrap;
-  max-width: 660px;
-
+  margin: 0 auto;
   z-index: 100;
+  @media (max-width: 1400px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px 10px;
+  }
 `;
+
+const Align = styled.div`
+  margin: 0 auto;
+`;
+
+const Form = styled.form``;
 
 const InputGroup = styled.div`
   padding-bottom: 60px;
@@ -27,7 +42,7 @@ const InputGroup = styled.div`
 
 const Label = styled.label`
   font-family: var(--font-montserrat);
-  font-weight: 300;
+  font-weight: 400;
   color: var(--black);
   font-size: 1.625rem;
   margin-right: 20px;
@@ -39,15 +54,17 @@ const Label = styled.label`
 
 const TextInput = styled.input`
   font-family: var(--font-montserrat);
-  font-weight: 500;
+  font-weight: 400;
+  color: var(--blue);
   font-size: 1.75rem;
-  color: var(--black);
+  border-radius: 10px;
+  background-color: var(--mediumGrey);
   border: none;
-  border-bottom: 1px solid var(--blue);
   caret-color: var(--pink);
-  padding: 1px 3px;
+  padding: 8px 3px;
+  width: 100%;
   &::placeholder {
-    color: var(--blue);
+    color: var(--darkGrey);
     opacity: 0.6;
     @media (max-width: 700px) {
       text-align: center;
@@ -100,34 +117,35 @@ const TextArea = styled.textarea`
   font-size: 1.675rem;
   color: var(--blue);
   z-index: 10;
-  margin-top: 30px;
+  margin-top: 10px;
   resize: none;
   caret-color: var(--pink);
-  background-color: white;
+  background-color: var(--mediumGrey);
   border-radius: 3px;
-  border: 1px solid var(--blue);
+  border: none;
   padding: 6px 8px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   @media (max-width: 700px) {
     max-width: 100vw;
     overflow-x: hidden;
+    font-size: 1rem;
   }
   &::placeholder {
     font-family: var(--font-montserrat);
     font-weight: 400;
     font-size: 1.675rem;
     opacity: 0.6;
-    color: var(--blue);
+    color: var(--darkGrey);
     @media (max-width: 700px) {
       font-weight: 300px;
       font-size: 1.35rem;
     }
   }
-  &:hover {
-    box-shadow: 10px 14px 38px rgba(0, 0, 0, 0.14),
-      6px 6px 16px rgba(0, 0, 0, 0.1);
-  }
+  // &:hover {
+  //   box-shadow: 10px 14px 38px rgba(0, 0, 0, 0.14),
+  //     6px 6px 16px rgba(0, 0, 0, 0.1);
+  // }
 `;
 
 const Send = styled.input`
@@ -136,16 +154,17 @@ const Send = styled.input`
   font-size: 1.275rem;
   letter-spacing: 4px;
   text-transform: uppercase;
-  border-radius: 2px;
+  border-radius: 10px;
   background-color: var(--blue);
-  padding: 10px 16px;
+  padding: 16px 16px;
   color: white;
   text-align: center;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in;
   margin-top: -50px;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
+  width: 100%;
   background-color: ${props => (props.sent ? "mediumseagreen" : "var(--blue)")};
   &:hover {
     transform: translateY(-2px);
@@ -154,7 +173,48 @@ const Send = styled.input`
   }
   @media (max-width: 700px) {
     // max-width: 90vw;
-    margin: 0 40px 20px;
+    // margin: 0 40px 20px;
+  }
+`;
+
+const LeftPanel = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  span {
+    color: #5b5b5b;
+    font-family: var(--font-raleway);
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+  }
+`;
+const Illustration = styled.img`
+  max-width: 100vw;
+  margin: 0 auto;
+  @media (max-width: 800px) {
+    width: 250px;
+  }
+`;
+
+const ContactInfo = styled.div`
+  a {
+    font-weight: 400;
+    color: #6a6a6a;
+    font-family: var(--font-montserrat);
+    font-size: 1.875rem;
+    transition-duration: 0.2s;
+    &:hover {
+      border-bottom: 1px solid var(--blue);
+    }
+  }
+
+  span {
+    font-family: var(--font-raleway);
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--blue);
   }
 `;
 
@@ -232,60 +292,69 @@ class ContactForm extends Component {
       "others"
     ]; // change here to add more options or edit the subject selector
     return (
-      <Form onSubmit={this.handleSubmit} id="contact-form">
-        <InputGroup>
-          <Label htmlFor="name">your name:</Label>
-          <TextInput
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Yuri Gagarin"
-            value={this.state.name}
-            onChange={this.handleNameChange}
-            required
-          />
-        </InputGroup>
-        <InputGroup>
-          <Label htmlFor="email">your email:</Label>
-          <TextInput
-            type="email"
-            name="email"
-            placeholder="yuri@spacex.com"
-            value={this.state.email}
-            onChange={this.handleEmailChange}
-            required
-          />
-        </InputGroup>
-        <InputGroup className="select">
-          <Label htmlFor="subject">what do you want to talk to us about?</Label>
-          <Select
-            id="subject"
-            value={this.state.value}
-            onChange={this.handleSubjectChange}
-          >
-            {this.renderOptions(options)}
-          </Select>
-        </InputGroup>
-        <InputGroup>
-          <Label htmlFor="message">write us a message:</Label>
-          <TextArea
-            name="message"
-            id="message"
-            cols="30"
-            rows="5"
-            placeholder="We’ll get back to you very soon! ;)"
-            value={this.state.messageContent}
-            onChange={this.handleMessageChange}
-            required
-            minlength="5"
-          />
-        </InputGroup>
-        <Send
-          type="submit"
-          value={this.state.formSent ? "message sent!" : "send"}
-          sent={this.state.formSent}
-        />
-      </Form>
+      <Align>
+        <Wrapper>
+          <Form onSubmit={this.handleSubmit} id="contact-form">
+            <InputGroup>
+              <TextInput
+                type="text"
+                id="name"
+                name="name"
+                placeholder="tell us your name"
+                value={this.state.name}
+                onChange={this.handleNameChange}
+                required
+              />
+            </InputGroup>
+            <InputGroup>
+              <TextInput
+                type="email"
+                name="email"
+                placeholder="...and your email address"
+                value={this.state.email}
+                onChange={this.handleEmailChange}
+                required
+              />
+            </InputGroup>
+            <InputGroup className="select">
+              <Label htmlFor="subject">pick a subject</Label>
+              <Select
+                id="subject"
+                value={this.state.value}
+                onChange={this.handleSubjectChange}
+              >
+                {this.renderOptions(options)}
+              </Select>
+            </InputGroup>
+            <InputGroup>
+              <TextArea
+                name="message"
+                id="message"
+                cols="30"
+                rows="5"
+                placeholder="and write us something! We’ll get back to you very soon ;)"
+                value={this.state.messageContent}
+                onChange={this.handleMessageChange}
+                required
+                minlength="5"
+              />
+            </InputGroup>
+            <Send
+              type="submit"
+              value={this.state.formSent ? "message sent!" : "Submit ➡️"}
+              sent={this.state.formSent}
+            />
+          </Form>
+          <LeftPanel>
+            <Illustration src="/public/img/contact.svg" />
+            <span>or</span>
+            <ContactInfo>
+              <span>@</span>{" "}
+              <a href="mailto:contact@3gir.com">contact@3gir.com</a>
+            </ContactInfo>
+          </LeftPanel>
+        </Wrapper>
+      </Align>
     );
   }
 }

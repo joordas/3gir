@@ -9,6 +9,13 @@ import HomepageBanner from "./HomepageBanner";
 import ServicePanel from "./ServicePanel";
 import ServicePanelsSlider from "./ServicePanelsSlider";
 import LetsTalk from "./LetsTalk";
+import Footer from "./Footer";
+
+const Rects = styled.div`
+  @media (max-width: 800px) {
+    display: none;
+  }
+`;
 
 class Homepage extends Component {
   state = {
@@ -47,16 +54,20 @@ class Homepage extends Component {
           fixNavBar={this.handleScroll}
           scrollTop={this.state.scrollTop}
         />
-        <SVG
-          src="/public/img/rectangles.svg"
-          className="rects"
-          onLoad={this.animateRectangles}
-        />
+        <Rects>
+          <SVG
+            src="/public/img/rectangles.svg"
+            className="rects"
+            onLoad={this.animateRectangles}
+            style={{ overflowX: "hidden" }}
+          />
+        </Rects>
         <ServicePanelsSlider
           borderColor="var(--blue)"
-          scrollTop={this.state.scrollTop * -1}
+          scrollTop={this.state.scrollTop}
         />
         <LetsTalk />
+        <Footer />
       </div>
     );
   }

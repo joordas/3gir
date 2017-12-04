@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 const Logo = styled(Link)`
   position: fixed;
   transition: all 0.3s ease-out;
-  z-index: 1000;
   &.fixed {
+    z-index: 1000;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.17);
     div {

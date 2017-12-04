@@ -1,0 +1,79 @@
+<svg width="417" height="1080" viewBox="0 0 417 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>side_rectangles</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-807 -2087)">
+<g id="side_rectangles">
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1321.01 2089)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1534.77 2139)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1388.35 2189)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1434.69 2239)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1327.19 2289)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1327.19 2589)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1449.51 2639)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path1_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1360.55 2689)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1387.12 2739)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1449.51 2789)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1388.35 2839)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1607.05 2889)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1560.72 2939)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1616.94 2989)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1463.1 3039)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1524.27 3089)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path2_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1475.46 3139)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1388.35 2339)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1449.51 2389)" fill="#333333"/>
+</g>
+<g id="Rectangle">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1510.68 2439)" fill="#333333"/>
+</g>
+<g id="ya.">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1260.32 2489)" fill="#333333"/>
+</g>
+<g id="told">
+<use xlink:href="#path0_fill" transform="matrix(6.12323e-17 1 -1 6.12323e-17 1321.48 2539)" fill="#333333"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 25 0L 25 337.319L 0 337.319L 0 0Z"/>
+<path id="path1_fill" d="M 0 0L 25 0L 25 429.99L 0 429.99L 0 0Z"/>
+<path id="path2_fill" d="M 0 0L 25 0L 25 580.115L 0 580.115L 0 0Z"/>
+</defs>
+</svg>
