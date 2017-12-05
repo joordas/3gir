@@ -106,8 +106,7 @@ class HomepageBanner extends Component {
               25 - this.props.scrollTop / 1.2
             )}, ${Math.floor(25 - this.props.scrollTop / 1.2)}, ${Math.floor(
               25 - this.props.scrollTop / 1.2
-            )})`,
-            lineHeight: `${7.688 + this.props.scrollTop * -1 / 120}rem`
+            )})`
           }}
         >
           We make websites.
