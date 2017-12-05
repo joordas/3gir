@@ -43,6 +43,15 @@ class Homepage extends Component {
     });
   };
 
+  componentDidMount() {
+    window.addEventListener("scroll", () => {
+      document.body.style.backgroundColor = `rgb(${Math.floor(
+        245 + this.state.scrollTop / 5
+      )}, ${Math.floor(245 + this.state.scrollTop / 5)}, ${Math.floor(
+        245 + this.state.scrollTop / 5
+      )})`;
+    });
+  }
   render() {
     return (
       <div>
@@ -58,7 +67,7 @@ class Homepage extends Component {
           <SVG
             src="/public/img/rectangles.svg"
             className="rects"
-            onLoad={this.animateRectangles}
+            // onLoad={this.animateRectangles}
             style={{ overflowX: "hidden" }}
           />
         </Rects>
