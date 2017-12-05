@@ -4,7 +4,8 @@ const webpack = require("webpack");
 module.exports = {
   context: __dirname,
   entry: "./src/App.jsx",
-  devtool: "cheap-eval-source-map",
+  devtool:
+    process.env.NODE_ENV === "development" ? "cheap-eval-source-map" : false,
   output: {
     path: path.join(__dirname, "public"),
     filename: "bundle.js",
