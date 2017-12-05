@@ -1,0 +1,15 @@
+.rects {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  max-width: 48vw;
+}
+
+.rect {
+  transition-duration: 0.3s;
+  fill: #333;
+}
+
+.rect:hover {
+  fill: var(--blue);
+}

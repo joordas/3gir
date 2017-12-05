@@ -1,27 +1,32 @@
-import React from "react";
+import React, { Component } from "react";
+import { findDOMNode } from "react-dom";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-const Logo = styled.div`
-  padding: 20px 20px 50px;
-  max-width: 800px;
-  position: relative;
-  left: 200px; // best choice? think again later pls;
-  @media (max-width: 1024px) {
-    position: static;
-    padding-left: 70px;
-    padding-right: 0;
-  }
-  @media (max-width: 700px) {
-    padding-left: 20px;
+const Logo = styled(Link)`
+  position: fixed;
+  transition: all 0.3s ease-out;
+  &.fixed {
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.17);
+    div {
+      padding: 20px 0 20px 4.375rem;
+      @media (max-width: 800px) {
+        padding: 20px;
+      }
+    }
   }
 `;
 
-const WeAre = styled.span`
-  color: var(--black);
-  font-family: var(--font-montserrat);
-  font-weight: 500;
-  font-size: 1.75rem;
-  text-transform: lowercase;
+const Wrapper = styled.div`
+  transition: all 0.3s ease-out;
+  padding: 60px 0 60px 4.375rem;
+  z-index: 2;
+  width: 100vw;
+  @media (max-width: 1400px) {
+    padding: 30px;
+  }
 `;
 
 const Gradient = styled.span`
@@ -34,27 +39,20 @@ const Gradient = styled.span`
   -webkit-text-fill-color: transparent;
   margin-left: 30px;
   @media (max-width: 1000px) {
-    font-size: 1.125rem;
-  }
-  @media (max-width: 700px) {
-    padding-top: 20px;
-    padding-left: 0;
-    margin-left: 0;
+    font-size: 1rem;
   }
 `;
 
 const LogoSVG = styled.img`
-  height: 54px;
-  width: 198px;
+  height: 34px;
   @media (max-width: 700px) {
     padding-left: 0px;
+    height: 22px;
   }
 `;
 
 const Align = styled.span`
   display: flex;
-  margin-left: 80px;
-  padding-top: 10px;
   align-items: center;
   @media (max-width: 700px) {
     flex-direction: column;
@@ -63,16 +61,27 @@ const Align = styled.span`
   }
 `;
 
-const LogoHeader = () => (
-  <Logo>
-    <div>
-      <WeAre>we are</WeAre>
-      <Align>
-        <LogoSVG src="/public/img/2.svg" alt="3GiR Logo" />
-        <Gradient>— affordable web services.</Gradient>
-      </Align>
-    </div>
-  </Logo>
-);
+class LogoHeader extends Component {
+  render() {
+    return (
+      <Logo to="/" className={this.props.navBarFixed ? "fixed" : ""}>
+        <Wrapper
+          style={{
+            backgroundColor: `rgb(${Math.floor(
+              245 + this.props.scrollTop / 5
+            )}, ${Math.floor(245 + this.props.scrollTop / 5)}, ${Math.floor(
+              245 + this.props.scrollTop / 5
+            )})`
+          }}
+        >
+          <Align>
+            <LogoSVG src="/public/img/2.svg" alt="3GiR Logo" />
+            <Gradient>— affordable web services.</Gradient>
+          </Align>
+        </Wrapper>
+      </Logo>
+    );
+  }
+}
 
 export default LogoHeader;

@@ -1,0 +1,36 @@
+<?xml-stylesheet type="text/css" href="/public/css/rectangles.css"?>
+<svg width="1175" height="826" viewBox="0 0 1175 826" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+  <desc>
+    Created using Figma
+  </desc>
+  <use xlink:href="#a"  class="rect" transform="translate(0 -170)" />
+  <use xlink:href="#a"  class="rect" transform="translate(50 -6)" />
+  <use xlink:href="#a"  class="rect" transform="translate(100 -352)" />
+  <use xlink:href="#a"  class="rect" transform="translate(150 -115)" />
+  <use xlink:href="#a"  class="rect" transform="translate(200 -190)" />
+  <use xlink:href="#a"  class="rect" transform="translate(250 -16)" />
+  <use xlink:href="#a"  class="rect" transform="translate(550 -16)" />
+  <use xlink:href="#a"  class="rect" transform="translate(600 -214)" />
+  <use xlink:href="#b"  class="rect" transform="translate(650 -70)" />
+  <use xlink:href="#c"  class="rect" transform="translate(700 -113)" />
+  <use xlink:href="#c"  class="rect" transform="translate(750 -214)" />
+  <use xlink:href="#c"  class="rect" transform="translate(800 -115)" />
+  <use xlink:href="#c"  class="rect" transform="translate(850 -469)" />
+  <use xlink:href="#c"  class="rect" transform="translate(900 -394)" />
+  <use xlink:href="#c"  class="rect" transform="translate(950 -485)" />
+  <use xlink:href="#c"  class="rect" transform="translate(1000 -236)" />
+  <use xlink:href="#c"  class="rect" transform="translate(1050 -335)" />
+  <use xlink:href="#c"  class="rect" transform="translate(1100 -256)" />
+  <use xlink:href="#c"  class="rect" transform="translate(1150 -342)" />
+  <use xlink:href="#a"  class="rect" transform="translate(300 -115)" />
+  <use xlink:href="#a"  class="rect" transform="translate(350 -214)" />
+  <use xlink:href="#a"  class="rect" transform="translate(400 -313)" />
+  <use xlink:href="#a"  class="rect" transform="translate(450 -412)" />
+  <use xlink:href="#a"  class="rect" transform="translate(500 -511)" />
+  <defs>
+    <path id="a"  d="M0 0h25v546H0V0z"/>
+    <path id="b"  d="M0 0h25v696H0V0z"/>
+    <path id="c"  d="M0 0h25v939H0V0z"/>
+  </defs>
+</svg>
