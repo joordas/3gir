@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.12);
   padding: 37px 53px;
   border-radius: 3px;
-  max-width: 1200px;
+  max-width: 1100px;
   flex-wrap: wrap;
   margin: 0 auto;
   z-index: 100;
