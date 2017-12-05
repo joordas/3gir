@@ -9,15 +9,8 @@ const Panel = styled.div`
   min-height: 675px;
   z-index: 2;
   border-radius: 1px;
-  // margin-top: -80px;
-  margin: 50px 0;
-  @media (max-width: 1400px) {
-    min-width: 800px;
-  }
   @media (max-width: 800px) {
-    min-width: 100%;
-    // min-height: 800px;
-    margin: 40px 0;
+    // margin-bottom: 100px;
   }
 `;
 const Align = styled.div`
@@ -27,13 +20,8 @@ const Align = styled.div`
   justify-content: space-around;
   width: 100%;
   margin-top: 50px;
-  // min-height: 100%;
-
   z-index: 1;
   padding-top: 40px;
-  @media (max-width: 800px) {
-    height: 100%;
-  }
 `;
 
 const PanelContent = styled.div`
@@ -47,9 +35,6 @@ const PanelContent = styled.div`
   position: absolute;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.13);
   border-radius: 1px;
-  // @media (max-width: 800px) {
-  //   min-height: 100vh;
-  // }
 `;
 
 const Title = styled.h2`
@@ -106,24 +91,25 @@ const Header = styled.div`
 
 const Inner = styled.div`
   padding: 40px 80px 0 50px;
-  display: grid;
-  grid-gap: 100px;
-  grid-template-columns: 4fr 6fr;
+  display: flex;
+  justify-content: space-between;
   img {
     max-width: 100%;
+    margin: 0 auto;
   }
   @media (max-width: 800px) {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 20px;
-    padding: 20px 30px;
-    align-items: center;
+    flex-direction: column;
+    padding: 20px;
   }
 `;
 
 const Description = styled.p`
+  padding-left: 50px;
   font-family: var(--font-montserrat);
   font-size: 1.5rem;
+  @media (max-width: 800px) {
+    padding: 0;
+  }
 `;
 
 class ServicePanel extends Component {

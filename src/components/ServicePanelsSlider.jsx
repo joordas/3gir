@@ -21,10 +21,6 @@ const Wrapper = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 100px;
-  // position: sticky;
-  // top: 0px;
-  // left: 0px;
-  // width: 100vw;
 `;
 const WhatWeDo = styled.h2`
   font-family: var(--font-montserrat);

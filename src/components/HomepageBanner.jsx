@@ -10,6 +10,8 @@ const Background = styled.div`
   // height: 220vh; // test
   @media (max-width: 1400px) {
     padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 100px;
   }
 `;
 
@@ -28,6 +30,10 @@ const Header = styled.h1`
     font-size: 6rem;
     max-width: 200px;
     line-height: 5rem;
+  }
+  @media (max-width: 800px) {
+    font-size: 5rem;
+    line-height: 1 !important;
   }
 `;
 
@@ -48,7 +54,6 @@ const Subheader = styled.h2`
 
 const Contact = styled(Link)`
   color: white;
-  border: 2px solid white;
   background-color: var(--blue);
   padding: 16px 34px;
   font-size: 2rem;

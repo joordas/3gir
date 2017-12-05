@@ -17,6 +17,9 @@ const Wrapper = styled.div`
     grid-template-rows: 1fr 1fr;
     padding: 20px 10px;
   }
+  @media (max-width: 800px) {
+    grid-template-rows: 5fr 2fr;
+  }
 `;
 
 const Align = styled.div`
@@ -178,6 +181,7 @@ const Send = styled.input`
 `;
 
 const LeftPanel = styled.div`
+  // it's actually the right panel, but I don't want to change the name now.
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -188,6 +192,13 @@ const LeftPanel = styled.div`
     font-weight: 500;
     font-size: 1.5rem;
     letter-spacing: 5px;
+  }
+  @media (max-width: 800px) {
+    justify-content: center;
+    max-height: 400px;
+  }
+  & > * {
+    padding-bottom: 20px;
   }
 `;
 const Illustration = styled.img`

@@ -12,6 +12,9 @@ const Logo = styled(Link)`
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.17);
     div {
       padding: 20px 0 20px 4.375rem;
+      @media (max-width: 800px) {
+        padding: 20px;
+      }
     }
   }
 `;
@@ -22,7 +25,7 @@ const Wrapper = styled.div`
   z-index: 2;
   width: 100vw;
   @media (max-width: 1400px) {
-    padding-left: 30px;
+    padding: 30px;
   }
 `;
 
@@ -36,7 +39,7 @@ const Gradient = styled.span`
   -webkit-text-fill-color: transparent;
   margin-left: 30px;
   @media (max-width: 1000px) {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 `;
 
@@ -44,6 +47,7 @@ const LogoSVG = styled.img`
   height: 34px;
   @media (max-width: 700px) {
     padding-left: 0px;
+    height: 22px;
   }
 `;
 
