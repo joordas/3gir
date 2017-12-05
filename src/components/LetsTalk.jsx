@@ -4,7 +4,7 @@ import styled from "styled-components";
 import ContactForm from "./ContactForm";
 
 const Container = styled.div`
-  display: flex;
+  // display: flex;
   max-width: 100vw;
   flex-direction: column;
   position: relative;
@@ -66,7 +66,7 @@ const SideRectangles = styled.img`
   right: 0;
   z-index: -1;
   max-height: 100%;
-  @media (max-width: 700px) {
+  @media (max-width: 1400px) {
     display: none;
   }
 `;
