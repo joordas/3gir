@@ -1,0 +1,62 @@
+<svg class="homepageDecor" width="678" height="924" viewBox="0 0 678 924" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" transform="translate(-591 240)">
+<g id="thingie">
+<g id="Rectangle 2">
+<use xlink:href="#path0_fill" transform="translate(745 -240)" fill="#4B4E5E"/>
+</g>
+<g id="Rectangle 3">
+<use xlink:href="#path1_fill" transform="matrix(1 0 0 -1 591 -94)" fill="#55596B"/>
+</g>
+<g id="Rectangle 3.2">
+<use xlink:href="#path2_fill" transform="matrix(1 0 0 -1 591 52)" fill="#4B4E5E"/>
+</g>
+<g id="Rectangle 3.4">
+<use xlink:href="#path3_fill" transform="matrix(1 0 0 -1 616 493)" fill="#55596B"/>
+</g>
+<g id="Rectangle 3.5">
+<use xlink:href="#path4_fill" transform="matrix(1 0 0 -1 616 345)" fill="#4B4E5E"/>
+</g>
+<g id="Rectangle 3.6">
+<use xlink:href="#path5_fill" transform="matrix(1 0 0 -1 672 200)" fill="#55596B"/>
+</g>
+<g id="Rectangle 3.8">
+<use xlink:href="#path6_fill" transform="matrix(1 0 0 -1 616 347)" fill="#4B4E5E"/>
+</g>
+<g id="Rectangle 3.9">
+<use xlink:href="#path3_fill" transform="matrix(1 0 0 -1 616 494)" fill="#55596B"/>
+</g>
+<g id="Rectangle 3.10">
+<use xlink:href="#path7_fill" transform="matrix(1 0 0 -1 694 684)" fill="#55596B"/>
+</g>
+<g id="Rectangle 3.11">
+<use xlink:href="#path8_fill" transform="matrix(1 0 0 -1 649 636)" fill="#4B4E5E"/>
+</g>
+<g id="Ellipse">
+<use xlink:href="#path9_fill" transform="translate(757 -218)" fill="#D46263"/>
+</g>
+<g id="Ellipse">
+<use xlink:href="#path10_fill" transform="translate(648 236)" fill="#55596B"/>
+</g>
+<g id="Ellipse">
+<use xlink:href="#path11_fill" transform="translate(706 545)" fill="#55596B"/>
+</g>
+<g id="Ellipse">
+<use xlink:href="#path10_fill" transform="translate(746 382)" fill="#D46263"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 524 0L 524 924L 0 924L 0 0Z"/>
+<path id="path1_fill" d="M 0 73C 0 32.6832 32.6832 0 73 0L 231 0C 271.317 0 304 32.6832 304 73L 304 73C 304 113.317 271.317 146 231 146L 73 146C 32.6832 146 0 113.317 0 73L 0 73Z"/>
+<path id="path2_fill" d="M 0 73C 0 32.6832 32.6832 0 73 0L 212 0C 252.317 0 285 32.6832 285 73C 285 113.317 252.317 146 212 146L 73 146C 32.6832 146 0 113.317 0 73Z"/>
+<path id="path3_fill" d="M 0 73C 0 32.6832 32.6832 0 73 0L 167 0C 207.317 0 240 32.6832 240 73L 240 73C 240 113.317 207.317 146 167 146L 73 146C 32.6832 146 0 113.317 0 73L 0 73Z"/>
+<path id="path4_fill" d="M 0 73C 0 32.6832 32.6832 0 73 0L 206 0C 246.317 0 279 32.6832 279 73C 279 113.317 246.317 146 206 146L 73 146C 32.6832 146 0 113.317 0 73Z"/>
+<path id="path5_fill" d="M 0 74C 0 33.1309 33.1309 0 74 0L 251 0C 291.869 0 325 33.1309 325 74L 325 74C 325 114.869 291.869 148 251 148L 74 148C 33.1309 148 0 114.869 0 74L 0 74Z"/>
+<path id="path6_fill" d="M 0 72.5C 0 32.4594 32.4594 0 72.5 0L 206.5 0C 246.541 0 279 32.4594 279 72.5C 279 112.541 246.541 145 206.5 145L 72.5 145C 32.4594 145 0 112.541 0 72.5Z"/>
+<path id="path7_fill" d="M 0 24C 0 10.7452 10.7452 0 24 0L 212 0C 225.255 0 236 10.7452 236 24L 236 24C 236 37.2548 225.255 48 212 48L 24 48C 10.7452 48 0 37.2548 0 24L 0 24Z"/>
+<path id="path8_fill" d="M 0 71C 0 31.7878 31.7878 0 71 0L 208 0C 247.212 0 279 31.7878 279 71C 279 110.212 247.212 142 208 142L 71 142C 31.7878 142 0 110.212 0 71Z"/>
+<path id="path9_fill" d="M 100 50C 100 77.6142 77.6142 100 50 100C 22.3858 100 0 77.6142 0 50C 0 22.3858 22.3858 0 50 0C 77.6142 0 100 22.3858 100 50Z"/>
+<path id="path10_fill" d="M 77 38.5C 77 59.763 59.763 77 38.5 77C 17.237 77 0 59.763 0 38.5C 0 17.237 17.237 0 38.5 0C 59.763 0 77 17.237 77 38.5Z"/>
+<path id="path11_fill" d="M 39 19.5C 39 30.2696 30.2696 39 19.5 39C 8.73045 39 0 30.2696 0 19.5C 0 8.73045 8.73045 0 19.5 0C 30.2696 0 39 8.73045 39 19.5Z"/>
+</defs>
+</svg>

@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 const Logo = styled(Link)`
   position: fixed;
+  height: 74px;
   transition: all 0.3s ease-out;
+  background-color: var(--darkBlue);
   &.fixed {
     z-index: 1000;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.17);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
     div {
-      padding: 20px 0 20px 4.375rem;
       @media (max-width: 800px) {
         padding: 20px;
       }
@@ -21,12 +21,10 @@ const Logo = styled(Link)`
 
 const Wrapper = styled.div`
   transition: all 0.3s ease-out;
-  padding: 60px 0 60px 4.375rem;
+  padding: 20px 0 20px 2.225rem;
   z-index: 2;
   width: 100vw;
-  @media (max-width: 1400px) {
-    padding: 30px;
-  }
+  margin-top: auto;
 `;
 
 const Gradient = styled.span`
@@ -45,7 +43,7 @@ const Gradient = styled.span`
 
 const LogoSVG = styled.img`
   height: 34px;
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     padding-left: 0px;
     height: 22px;
   }
@@ -55,9 +53,6 @@ const Align = styled.span`
   display: flex;
   align-items: center;
   @media (max-width: 700px) {
-    flex-direction: column;
-    margin-left: 0;
-    align-items: flex-start;
   }
 `;
 
