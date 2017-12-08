@@ -153,8 +153,9 @@ class HomepageBanner extends Component {
           </Header>
           <Subheader scrollTop={this.props.scrollTop}>And then more.</Subheader>
           <Content>
-            Romania based web studio that combines good design with clean code
-            and excelent prices.
+            Romania based web studio that combines <span>good design</span> with{" "}
+            <span>clean code </span>
+            and <span> excelent prices</span>.
           </Content>
         </Lettering>
         <Contact to="/contact">let's talk!</Contact>

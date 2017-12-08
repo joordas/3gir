@@ -4,6 +4,8 @@
   --font-serif: "Mongolian Baiti", "Playfair Display", -apple-system, serif;
   --font-raleway: "Raleway", -apple-system, BlinkMacSystemFont, Roboto,
     Helvetica Neue, sans-serif;
+  --font-lato: "Lato", -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,
+    sans-serif;
   --blue: #2f80ed;
   --lightBlue: #61e1ff;
   --pink: #ff2e63;
@@ -94,7 +96,7 @@ div.fixed {
 
 .homepageDecor {
   max-height: calc(100vh - 74px);
-  height: calc(100vh - 74px);
+  /* height: calc(100vh - 74px); */
 
   position: absolute;
   top: 0;
