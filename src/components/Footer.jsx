@@ -69,9 +69,9 @@ class Footer extends Component {
             services
           </a>
           {/* <a onClick={() => scrollToElement('#portfolio')}>portfolio</a> */}
-          <a onClick={() => scrollToElement("#about", scrollOptions)}>
+          {/* <a onClick={() => scrollToElement("#about", scrollOptions)}>
             about us
-          </a>
+          </a> */}
         </div>
         <div
           onClick={() => scrollToElement("#contact", scrollOptions)}

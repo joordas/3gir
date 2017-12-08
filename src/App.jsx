@@ -26,8 +26,6 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Route exact path="/" component={Homepage} />
-          <Route exact path="/contact" component={LetsTalk} />
-          <Route exact path="/slider" component={ServicePanelsSlider} />
         </div>
       </BrowserRouter>
     );

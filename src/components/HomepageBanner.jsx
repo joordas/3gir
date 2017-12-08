@@ -1,44 +1,53 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import SVG from "react-inlinesvg";
+import scrollToElement from "scroll-to-element";
 
 const Background = styled.div`
-  background-color: var(--lightGrey);
-
+  background-color: var(--lightDarkBlue);
+  z-index: 2;
   padding-left: 4.375rem;
-  padding-top: 250px; // offseting LogoHeader's position:fixed;
-  // height: 220vh; // test
-  @media (max-width: 1400px) {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 100px;
+  height: 100vh;
+  @media (max-width: 800px) {
+    padding: 0 1rem;
   }
 `;
 
 const Header = styled.h1`
-  color: var(--black);
+  color: var(--lightGrey);
   margin: 0;
   font-family: var(--font-serif);
   font-weight: 400;
   line-height: 7.688rem;
   font-size: 9rem;
   letter-spacing: -0.07em;
-  max-width: 392px;
   z-index: 100;
-  // overflow-x: hidden;
-  @media (max-width: 1400px) {
-    font-size: 6rem;
-    max-width: 200px;
-    line-height: 5rem;
+  position: relative;
+  span {
+    position: relative;
+    display: table;
+    &:after {
+      background-color: #7a8d9b;
+      content: "";
+      width: 150%;
+      height: 12px;
+      position: absolute;
+      bottom: 0;
+      left: -100px;
+      z-index: -1;
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
   }
   @media (max-width: 800px) {
-    font-size: 5rem;
-    line-height: 1 !important;
+    font-size: 4rem;
+    line-height: 3.5rem;
   }
 `;
 
 const Subheader = styled.h2`
-  color: var(--black);
+  color: var(--yellow);
   margin: 0;
   font-family: var(--font-serif);
   font-weight: 400;
@@ -46,19 +55,42 @@ const Subheader = styled.h2`
   font-size: 3.188rem;
   margin-top: 50px;
   margin-bottom: 70px;
+  position: relative;
+  z-index: 10;
   @media (max-width: 1400px) {
     font-size: 2.3rem;
     margin-top: 20px;
+    margin-bottom: 30px;
   }
 `;
 
-const Contact = styled(Link)`
-  color: white;
-  background-color: var(--blue);
+const Content = styled.p`
+  font-family: var(--font-montserrat);
+  font-weight: 400;
+  font-size: 2.375rem;
+  max-width: 50vw;
+  position: relative;
+  z-index: 10;
+  color: var(--lightBlue);
+  span {
+    color: var(--yellow);
+  }
+  @media (max-width: 1400px) {
+    font-size: 1.875rem;
+  }
+  @media (max-width: 800px) {
+    font-size: 1.25rem;
+    max-width: 100vw;
+  }
+`;
+
+const Contact = styled.div`
+  color: var(--lightDarkBlue);
+  background-color: var(--yellow);
   padding: 16px 34px;
   font-size: 2rem;
   font-family: var(--font-montserrat);
-  border-radius: 999rem;
+  border-radius: 4px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.11);
   flex-grow: 0;
   margin-bottom: 100px;
@@ -67,6 +99,8 @@ const Contact = styled(Link)`
   text-align: center;
   transition: all 0.2s ease-in;
   cursor: pointer;
+  position: relative;
+  z-index: 10;
   &:hover {
     transform: translateY(-2px);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.11),
@@ -79,51 +113,63 @@ const Contact = styled(Link)`
   }
 `;
 
+const Lettering = styled.div`
+  padding-top: 100px;
+  z-index: 100;
+  @media (max-width: 800px) {
+    padding-top: 120px;
+  }
+`;
+
+const PageDecor = styled.div`
+  position: absolute;
+  top: 74px;
+  right: 0;
+  height: calc(100vh - 74px);
+  max-height: calc(100vh - 74px);
+  z-index: 0;
+  @media (max-width: 800px) {
+    display: none;
+  }
+`;
+
 class HomepageBanner extends Component {
   componentDidMount() {
     this.props.fixNavBar(this.banner);
   }
 
   render() {
+    const scrollOptions = {
+      offset: -100,
+      // ease: "ease-in",
+      duration: 1500
+    };
     return (
       <Background
         ref={div => {
           this.banner = div;
         }}
-        scrollTop={this.props.scrollTop}
-        style={{
-          backgroundColor: `rgb(${Math.floor(
-            245 + this.props.scrollTop / 5
-          )}, ${Math.floor(245 + this.props.scrollTop / 5)}, ${Math.floor(
-            245 + this.props.scrollTop / 5
-          )})`
-        }}
+        id="home"
       >
-        <Header
-          scrollTop={this.props.scrollTop}
-          style={{
-            color: `rgb(${Math.floor(
-              25 - this.props.scrollTop / 1.2
-            )}, ${Math.floor(25 - this.props.scrollTop / 1.2)}, ${Math.floor(
-              25 - this.props.scrollTop / 1.2
-            )})`
-          }}
-        >
-          We make websites.
-        </Header>
-        <Subheader
-          scrollTop={this.props.scrollTop}
-          style={{
-            color: `rgb(${Math.floor(
-              25 - this.props.scrollTop / 1.2
-            )}, ${Math.floor(25 - this.props.scrollTop / 1.2)}, ${Math.floor(
-              25 - this.props.scrollTop / 1.2
-            )})`
-          }}
-        >
-          And then more.
-        </Subheader>
-        <Contact to="/contact">let's talk!</Contact>
+        <Lettering>
+          <Header>
+            <span>We</span>
+            <span>make</span>
+            <span>Websites</span>
+          </Header>
+          <Subheader scrollTop={this.props.scrollTop}>And then more.</Subheader>
+          <Content>
+            Romania based web studio that combines <span>good design</span> with{" "}
+            <span>clean code </span>
+            and <span> excelent prices</span>.
+          </Content>
+        </Lettering>
+        <Contact onClick={() => scrollToElement("#contact", scrollOptions)}>
+          let's talk!
+        </Contact>
+        <PageDecor>
+          <SVG src="/public/img/thingie.svg" />
+        </PageDecor>
       </Background>
     );
   }
