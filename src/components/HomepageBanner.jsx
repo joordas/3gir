@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import SVG from "react-inlinesvg";
-import { Link } from "react-router-dom";
+import scrollToElement from "scroll-to-element";
 
 const Background = styled.div`
   background-color: var(--lightDarkBlue);
@@ -84,7 +84,7 @@ const Content = styled.p`
   }
 `;
 
-const Contact = styled(Link)`
+const Contact = styled.div`
   color: var(--lightDarkBlue);
   background-color: var(--yellow);
   padding: 16px 34px;
@@ -139,11 +139,17 @@ class HomepageBanner extends Component {
   }
 
   render() {
+    const scrollOptions = {
+      offset: -100,
+      // ease: "ease-in",
+      duration: 1500
+    };
     return (
       <Background
         ref={div => {
           this.banner = div;
         }}
+        id="home"
       >
         <Lettering>
           <Header>
@@ -158,7 +164,9 @@ class HomepageBanner extends Component {
             and <span> excelent prices</span>.
           </Content>
         </Lettering>
-        <Contact to="/contact">let's talk!</Contact>
+        <Contact onClick={() => scrollToElement("#contact", scrollOptions)}>
+          let's talk!
+        </Contact>
         <PageDecor>
           <SVG src="/public/img/thingie.svg" />
         </PageDecor>

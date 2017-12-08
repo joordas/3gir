@@ -48,7 +48,7 @@ const WhatWeDo = styled.h2`
 class ServicePanelsSlider extends Component {
   render() {
     return (
-      <div>
+      <div id="services">
         <WhatWeDo scrollTop={this.props.scrollTop}>what we do</WhatWeDo>
         <Wrapper>
           {services.map(service => (

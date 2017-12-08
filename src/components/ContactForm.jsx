@@ -32,6 +32,8 @@ const TextInput = styled.input`
   font-family: var(--font-montserrat);
   font-weight: 400;
   font-size: 1.275rem;
+  color: var(--blue);
+  caret-color: var(--pink);
   flex-grow: 1;
   margin: 0 auto;
   width: calc(100% - 20px); //offsetting padding-left;
@@ -67,7 +69,7 @@ const Select = styled.select`
   font-size: 1.675rem;
   text-align: center;
   text-align-last: center;
-  color: var(--blue) !important;
+  color: var(--yellow) !important;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -79,13 +81,14 @@ const Select = styled.select`
   margin: 20px 0;
   border-radius: 3px;
   cursor: pointer;
+  width: 100%;
   &:focus,
   &:active {
     outline: none;
   }
   option {
     font-family: var(--font-montserrat) !important;
-    color: var(--blue) !important;
+    // color: var(--blue) !important;
     font-weight: 400 !important;
     font-size: 1.675rem !important;
     text-align: center !important;
