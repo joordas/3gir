@@ -161,7 +161,7 @@ class HomepageBanner extends Component {
           <Content>
             Romania based web studio that combines <span>good design</span> with{" "}
             <span>clean code </span>
-            and <span> excelent prices</span>.
+            and <span> excellent prices</span>.
           </Content>
         </Lettering>
         <Contact onClick={() => scrollToElement("#contact", scrollOptions)}>
